@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>תוכן ושיעורים | אופק יהודי – הרב יוסף מלכה</title>
+<meta name="description" content="שיעורים, סרטונים קצרים ומאמרים מאת הרב יוסף מלכה: פרשת שבוע, מנהיגות וצמיחה אישית, וזוגיות.">
+<meta property="og:title" content="תוכן ושיעורים | אופק יהודי">
+<meta property="og:description" content="שיעורים, סרטונים קצרים ומאמרים מאת הרב יוסף מלכה: פרשת שבוע, מנהיגות וצמיחה אישית, וזוגיות.">
+<meta property="og:image" content="https://i.ytimg.com/vi/42XaP8NaVj8/hqdefault.jpg">
+<meta property="og:locale" content="he_IL">
+<link rel="alternate" hreflang="en" href="en/content.html">
+<meta name="theme-color" content="#0B1426">
+<link rel="preload" href="fonts/TelAviv-BrutalistBold.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistLight.ttf") format("truetype");font-weight:300;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistRegular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistBold.ttf") format("truetype");font-weight:700;font-display:swap}
+
+:root{
+  --navy-950:#08101F;--navy-900:#0B1426;--navy-800:#111E38;--navy-700:#1A2B4D;
+  --line-dark:rgba(226,201,143,.18);
+  --gold:#C9A45C;--gold-soft:#E2C98F;--gold-deep:#9C7A3C;
+  --cream:#F6F1E7;--cream-2:#EDE4D3;--ink:#16213A;--ink-soft:#4A5470;--wa:#25D366;
+  --max:1520px;
+  --gutter:clamp(16px,4vw,56px);
+  --side:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)));
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Tel Aviv",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:clamp(16px,1.05vw,18px)}
+html,body{overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.skip{position:fixed;inset-inline-start:12px;top:12px;z-index:200;background:var(--gold);color:var(--navy-950);padding:10px 16px;text-decoration:none;font-weight:700;transform:translateY(-200%)}
+.skip:focus{transform:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* shared */
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.18em;color:var(--gold);margin:0 0 28px}
+.eyebrow b{font-weight:700;font-size:15px;letter-spacing:0}
+.eyebrow::after{content:"";height:1px;width:56px;background:currentColor;opacity:.6}
+.light .eyebrow{color:var(--gold-deep)}
+.h-xl{font-weight:700;font-size:clamp(48px,8.4vw,136px);line-height:.92;letter-spacing:-.02em;margin:0}
+.h-l{font-weight:700;font-size:clamp(32px,4.4vw,64px);line-height:1.05;margin:0}
+.lead{font-weight:300;font-size:clamp(18px,1.5vw,22px);line-height:1.6}
+.gold{color:var(--gold)}
+.gd{color:var(--gold-deep)}
+.o{color:transparent;-webkit-text-stroke:1.2px var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border:1px solid transparent;text-decoration:none;font-weight:700;font-size:16px;line-height:1;transition:background .3s,color .3s,border-color .3s;white-space:nowrap}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(-4px)}
+.btn-gold{background:var(--gold);color:var(--navy-950)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-line{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-soft)}
+.btn-ink{background:var(--navy-900);color:#fff}
+.btn-ink:hover{background:var(--navy-700)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+section{position:relative}
+.sec{padding-block:clamp(88px,12vw,168px)}
+.dark{background:var(--navy-900);color:#E9EDF5}
+.dark .lead{color:#B9C2D6}
+.demo-tag{display:inline-block;font-size:11px;background:rgba(201,164,92,.16);color:var(--gold-soft);padding:3px 8px;letter-spacing:.04em}
+.light .demo-tag{color:var(--gold-deep)}
+
+/* header */
+.hdr{position:fixed;inset-inline:0;top:0;z-index:100;transition:background .4s,box-shadow .4s,padding .4s;padding-block:22px}
+.hdr.solid{background:rgba(8,16,31,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-block:12px;box-shadow:0 1px 0 var(--line-dark)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;flex-shrink:0}
+.logo svg{width:38px;height:42px}
+.logo-txt{display:flex;flex-direction:column;line-height:1}
+.logo-txt b{font-size:22px;font-weight:700}
+.logo-txt small{font-size:11px;letter-spacing:.12em;color:var(--gold-soft);margin-top:5px;font-weight:300}
+.nav{display:flex;align-items:center;gap:clamp(16px,2vw,32px)}
+.nav a{text-decoration:none;color:#fff;font-size:15px;position:relative;padding-block:6px}
+.nav a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s var(--ease);transform-origin:right}
+.nav a:hover::after,.nav a[aria-current]::after{transform:scaleX(1)}
+.nav a[aria-current]{color:var(--gold-soft)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.lang{color:#fff;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,.3);padding:7px 10px;line-height:1;letter-spacing:.05em}
+.lang:hover{border-color:var(--gold);color:var(--gold-soft)}
+.hdr .btn{padding:12px 20px;font-size:15px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;color:#fff}
+.burger span{position:absolute;inset-inline:10px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.m-extra{display:none;gap:12px;margin-top:20px}
+.m-extra a{font-size:16px!important}
+
+/* footer + floating */
+.foot{background:var(--navy-950);color:#A9B3C9;padding-block:80px 32px;font-size:15px;border-top:1px solid var(--line-dark)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:56px;border-bottom:1px solid var(--line-dark)}
+.foot h4{color:#fff;font-size:15px;margin:0 0 18px;letter-spacing:.06em}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.foot a{text-decoration:none;transition:color .3s}
+.foot a:hover{color:var(--gold-soft)}
+.foot .logo{margin-bottom:20px}
+.socials{display:flex;gap:10px}
+.socials a{width:42px;height:42px;border:1px solid var(--line-dark);display:grid;place-items:center;border-radius:50%;color:#fff;transition:background .3s,color .3s}
+.socials a:hover{background:var(--navy-700);color:var(--gold-soft)}
+.socials svg{width:18px;height:18px}
+.light .socials a{color:var(--ink);border-color:rgba(22,33,58,.2)}
+.light .socials a:hover{background:var(--navy-900);color:var(--gold-soft)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:28px;font-size:13px}
+.foot-bottom nav{display:flex;gap:20px;flex-wrap:wrap}
+.wa-float{position:fixed;bottom:22px;left:22px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.4);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.a11y-float{position:fixed;top:50%;right:0;z-index:90;background:var(--navy-900);color:var(--gold-soft);border:1px solid var(--line-dark);border-inline-end:0;width:44px;height:48px;display:grid;place-items:center;transform:translateY(-50%)}
+.a11y-float svg{width:24px;height:24px}
+.yt{position:relative;aspect-ratio:16/9;background:var(--navy-900);overflow:hidden;border:0;padding:0;width:100%;display:block;color:#fff;text-align:start}
+.yt img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),opacity .4s;opacity:.85}
+.yt:hover img{transform:scale(1.04);opacity:1}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,31,.9),rgba(8,16,31,0) 60%)}
+.yt .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:rgba(201,164,92,.95);display:grid;place-items:center;z-index:1;transition:transform .3s var(--ease)}
+.yt:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.yt .play::before{content:"";border-block:11px solid transparent;border-inline-end:18px solid var(--navy-950);margin-inline-end:-4px}
+.yt .t{position:absolute;inset-inline:20px;bottom:18px;z-index:1;font-weight:700;font-size:clamp(16px,1.4vw,20px);line-height:1.3}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.yt.playing::after{display:none}
+.btn-ink-line{border-color:var(--ink);color:var(--ink)}
+.btn-ink-line:hover{background:var(--ink);color:#fff}
+
+/* ---------- content hub ---------- */
+.c-hero{background:var(--navy-950);color:#fff;padding:150px var(--side) 0;position:relative;overflow:hidden;isolation:isolate}
+.c-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(40% 70% at 15% 20%,rgba(201,164,92,.16),transparent 70%)}
+.c-hero .crumbs{margin-bottom:clamp(36px,5vw,64px)}
+.c-top{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,5vw,80px);align-items:end;padding-bottom:clamp(48px,6vw,88px)}
+.c-top h1{font-weight:700;font-size:clamp(52px,8.4vw,140px);line-height:.9;letter-spacing:-.02em;margin:0}
+.c-top h1 .o{display:block}
+.c-top .lead{color:#C9D0DF;margin:0 0 28px}
+.c-stats{display:flex;gap:clamp(24px,3vw,48px);flex-wrap:wrap}
+.c-stats div{display:flex;flex-direction:column}
+.c-stats b{font-size:clamp(34px,3.4vw,52px);line-height:1;color:var(--gold)}
+.c-stats span{font-size:13px;color:#8D97AE;letter-spacing:.08em;margin-top:6px}
+
+/* featured lesson */
+.feat{display:grid;grid-template-columns:1.5fr 1fr;gap:0;background:var(--navy-900);border:1px solid var(--line-dark);border-bottom:0}
+.feat .yt{aspect-ratio:16/9}
+.feat-txt{padding:clamp(28px,3.5vw,56px);display:flex;flex-direction:column;justify-content:center;gap:16px}
+.feat-txt .k{font-size:12px;letter-spacing:.18em;color:var(--gold)}
+.feat-txt h2{font-size:clamp(26px,2.6vw,40px);line-height:1.15;margin:0}
+.feat-txt p{color:#B9C2D6;margin:0}
+.feat-txt small{color:#8D97AE;font-size:13px}
+
+/* filter bar */
+.fbar{position:sticky;top:64px;z-index:50;background:rgba(246,241,231,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(22,33,58,.08)}
+.fbar .wrap{display:flex;align-items:center;gap:10px;padding-block:14px;overflow-x:auto;scrollbar-width:none}
+.fbar .wrap::-webkit-scrollbar{display:none}
+.fbar p{margin:0 0 0 8px;font-size:13px;color:var(--ink-soft);white-space:nowrap}
+.chip{border:1px solid rgba(22,33,58,.2);background:transparent;color:var(--ink);padding:10px 18px;font-size:15px;border-radius:40px;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}
+.chip:hover{border-color:var(--navy-900)}
+.chip[aria-pressed="true"]{background:var(--navy-900);color:#fff;border-color:var(--navy-900)}
+.chip i{font-style:normal;font-size:12px;opacity:.6;margin-inline-start:6px}
+
+.c-sec{padding-block:clamp(64px,8vw,112px)}
+.c-sec+.c-sec{padding-top:0}
+.c-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.c-head h2{font-size:clamp(30px,3.6vw,54px);line-height:1;margin:0}
+.c-head p{margin:0;color:var(--ink-soft);max-width:420px}
+[hidden]{display:none!important}
+
+/* lesson grid */
+.lessons{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,28px)}
+.lesson{display:flex;flex-direction:column;gap:14px}
+.lesson .yt .t{display:none}
+.lesson .yt .play{width:58px;height:58px}
+.lesson h3{font-size:20px;line-height:1.3;margin:0}
+.meta{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--ink-soft)}
+.tag{font-size:12px;color:var(--gold-deep);border:1px solid rgba(156,122,60,.35);padding:3px 10px;border-radius:40px}
+
+/* shorts rail */
+.shorts-wrap{position:relative}
+.shorts{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(200px,19vw,260px);gap:clamp(14px,1.6vw,22px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.short{scroll-snap-align:start;display:flex;flex-direction:column;gap:12px}
+.short .yt{aspect-ratio:9/16}
+.short .yt .t{font-size:16px}
+.short .yt .play{width:52px;height:52px}
+.short .yt .play::before{border-block-width:8px;border-inline-end-width:13px}
+.rail-nav{display:flex;gap:10px}
+.rail-nav button{width:48px;height:48px;border-radius:50%;border:1px solid rgba(22,33,58,.25);background:transparent;color:var(--ink);display:grid;place-items:center;transition:background .3s,color .3s}
+.rail-nav button:hover{background:var(--navy-900);color:#fff}
+.rail-nav svg{width:18px;height:18px}
+.rail-nav .prev svg{transform:scaleX(-1)}
+
+/* articles */
+.arts{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,22px)}
+.art{position:relative;display:flex;flex-direction:column;gap:12px;padding:30px 26px 26px;background:#fff;border:1px solid rgba(22,33,58,.08);text-decoration:none;color:var(--ink);min-height:300px;transition:transform .4s var(--ease),box-shadow .4s}
+.art:hover{transform:translateY(-6px);box-shadow:0 30px 50px -36px rgba(22,33,58,.5)}
+.art-n{font-size:44px;font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px var(--gold-deep)}
+.art h3{font-size:21px;line-height:1.25;margin:0}
+.art p{margin:0;color:var(--ink-soft);font-size:15px}
+.art-more{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--navy-700)}
+.art-more svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.art:hover .art-more svg{transform:translateX(-4px)}
+
+.empty{padding:40px 0;color:var(--ink-soft)}
+
+/* follow band */
+.follow{background:var(--navy-900);color:#fff}
+.follow .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-block:clamp(56px,7vw,96px)}
+.follow h2{font-size:clamp(30px,3.6vw,54px);line-height:1.05;margin:0 0 14px}
+.follow p{margin:0;color:#B9C2D6}
+.follow .acts{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(1.08)}
+
+/* responsive */
+@media (max-width:1080px){
+  .nav,.hdr-cta .lang,.hdr-cta .btn{display:none}
+  .burger{display:block}
+  .menu-open .nav{display:flex;position:fixed;inset:0;flex-direction:column;justify-content:center;align-items:center;gap:26px;background:var(--navy-950);z-index:-1}
+  .menu-open .nav a{font-size:26px;font-weight:700}
+  .menu-open .nav .m-extra{display:flex}
+  .menu-open .hdr{background:transparent;box-shadow:none;backdrop-filter:none}
+}
+@media (max-width:900px){
+  .hdr,.hdr.solid{padding-block:10px}
+  .l-hero{padding:110px var(--gutter) 56px}
+  .l-body{grid-template-columns:1fr;padding-inline:var(--gutter)}
+  .toc{position:static;background:#fff;border:1px solid rgba(22,33,58,.08);padding:20px 18px 12px}
+  .toc ol{display:grid;grid-template-columns:1fr 1fr;border:0}
+  .toc a{padding:7px 4px;border:0;font-size:14px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .toc ol{grid-template-columns:1fr}
+  .tbl td:first-child{white-space:normal}
+  .foot-grid{grid-template-columns:1fr}
+  .wa-float{width:52px;height:52px;bottom:16px;left:16px}
+  .a11y-float{top:auto;bottom:18px;right:16px;transform:none;border:1px solid var(--line-dark);border-radius:50%;width:48px;height:48px}
+}
+@media (max-width:1080px){
+  .lessons{grid-template-columns:1fr 1fr}
+  .arts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .c-hero{padding:110px var(--gutter) 0}
+  .c-top{grid-template-columns:1fr}
+  .feat{grid-template-columns:1fr;margin-inline:calc(var(--gutter)*-1)}
+  .fbar{top:60px}
+  .follow .wrap{grid-template-columns:1fr}
+  .follow .acts{justify-content:flex-start}
+}
+@media (max-width:640px){
+  .lessons,.arts{grid-template-columns:1fr}
+  .shorts{grid-auto-columns:62vw}
+  .art{min-height:0}
+  .rail-nav{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg-ofek" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3C9BE0"/><stop offset="1" stop-color="#36C6EE"/></linearGradient>
+    <symbol id="ofek-mark" viewBox="750 565 432 482">
+      <path d="M965 575 1100 800 965 1037 830 800Z" fill="#BFE9F7" opacity=".55"/>
+      <path d="M760 678h135q55 12 90 107q25-95 75-107h112l-72 122 72 130h-112q-80-10-110-110q-25 100-80 110H760l70-130Z" fill="url(#lg-ofek)"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8ZM10 15V9l5.2 3Z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.5 3a4.8 4.8 0 0 0 4 4.4v3.2a8 8 0 0 1-4-1.2v6.3A6.3 6.3 0 1 1 10.2 9.4v3.3a3 3 0 1 0 3 3V3Z"/></symbol>
+    <symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M4 8l8 1.5L20 8M12 9.5V14m0 0-3.5 7M12 14l3.5 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="אופק יהודי – לדף הבית">
+      <svg aria-hidden="true"><use href="#ofek-mark"/></svg>
+      <span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="ניווט ראשי">
+      <a href="leadership.html">יהדות ומנהיגות</a>
+      <a href="matzpen.html">המצפן</a>
+      <a href="rabbi.html">הרב יוסף מלכה</a>
+      <a href="content.html" aria-current="page">תוכן ושיעורים</a>
+      <a href="index.html#contact">צור קשר</a>
+      <span class="m-extra"><a class="lang" href="en/" lang="en">English</a><a class="btn btn-gold" href="index.html#donate">תרמו</a></span>
+    </nav>
+    <div class="hdr-cta">
+      <a class="lang" href="en/" lang="en" hreflang="en">EN</a>
+      <a class="btn btn-gold" href="index.html#donate">תרמו</a>
+      <button class="burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="c-hero" aria-labelledby="ch">
+  <div class="wrap" style="padding:0;max-width:none">
+    <nav class="crumbs reveal" aria-label="פירורי לחם"><a href="index.html">דף הבית</a><span aria-hidden="true">/</span><span aria-current="page">תוכן ושיעורים</span></nav>
+    <div class="c-top">
+      <div>
+        <p class="eyebrow reveal"><b>✦</b>הספרייה של הרב יוסף מלכה</p>
+        <h1 class="reveal d1" id="ch">תוכן <span class="o">ושיעורים.</span></h1>
+      </div>
+      <div class="reveal d2">
+        <p class="lead">שיעורים על פרשת השבוע, מנהיגות וצמיחה אישית, סרטונים קצרים על זוגיות ומאמרים מעמיקים. אפשר לצפות כאן, לשתף, ולחזור לשיעור הבא.</p>
+        <div class="c-stats">
+          <div><b>7</b><span>שיעורים</span></div>
+          <div><b>8</b><span>סרטונים קצרים</span></div>
+          <div><b>4</b><span>מאמרים</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="feat reveal">
+      <button class="yt" data-id="42XaP8NaVj8" aria-label="ניגון השיעור: בכי, גלות ונחמה – תשעה באב">
+        <img src="https://i.ytimg.com/vi/42XaP8NaVj8/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span>
+      </button>
+      <div class="feat-txt">
+        <p class="k">שיעור מומלץ · פרשה ומועדים</p>
+        <h2>בכי, גלות ונחמה</h2>
+        <p>מדוע בכה רבן גמליאל, ומה אפשר ללמוד מחורבן הבית לימינו? שיעור לתשעה באב מבית המדרש ״יחוה דעת״.</p>
+        <small>תשעה באב תשפ״ד</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fbar" role="toolbar" aria-label="סינון לפי נושא">
+  <div class="wrap">
+    <p>סינון:</p>
+    <button class="chip" aria-pressed="true" data-f="all">הכל</button>
+    <button class="chip" aria-pressed="false" data-f="lead">מנהיגות וצמיחה</button>
+    <button class="chip" aria-pressed="false" data-f="love">זוגיות</button>
+    <button class="chip" aria-pressed="false" data-f="parasha">פרשה ומועדים</button>
+  </div>
+</div>
+<p class="sr" aria-live="polite" id="fStatus"></p>
+
+<section class="c-sec" id="lessons" aria-labelledby="ls-h">
+  <div class="wrap">
+    <div class="c-head">
+      <h2 id="ls-h" class="reveal">שיעורים</h2>
+      <p class="reveal d1">שיעורים מלאים מהערוץ של הרב: פרשת שבוע, מנהיגות ועבודת המידות.</p>
+    </div>
+    <div class="lessons">
+      <article class="lesson reveal" data-cat="parasha">
+        <button class="yt" data-id="cvN9yTVTAAM" aria-label="ניגון השיעור: השתוקקות בעשיית המצוות"><img src="https://i.ytimg.com/vi/cvN9yTVTAAM/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">פרשה ומועדים</span><span>פרשת בחוקותי</span></div>
+        <h3>השתוקקות בעשיית המצוות</h3>
+      </article>
+      <article class="lesson reveal d1" data-cat="lead">
+        <button class="yt" data-id="W2gohrMshJA" aria-label="ניגון השיעור: על אכפתיות ומנהיגות"><img src="https://i.ytimg.com/vi/W2gohrMshJA/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">מנהיגות וצמיחה</span></div>
+        <h3>על ״אכפתיות״ ומנהיגות</h3>
+      </article>
+      <article class="lesson reveal d2" data-cat="lead">
+        <button class="yt" data-id="cygr7wu1k3E" aria-label="ניגון השיעור: דחיינות מול חריצות"><img src="https://i.ytimg.com/vi/cygr7wu1k3E/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">מנהיגות וצמיחה</span></div>
+        <h3>דחיינות מול חריצות</h3>
+      </article>
+      <article class="lesson reveal" data-cat="parasha lead">
+        <button class="yt" data-id="jmHVbkUHxKc" aria-label="ניגון השיעור: האחדות כמשימה"><img src="https://i.ytimg.com/vi/jmHVbkUHxKc/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">פרשה ומועדים</span><span>פרשת בא</span></div>
+        <h3>״האחדות כמשימה״</h3>
+      </article>
+      <article class="lesson reveal d1" data-cat="parasha lead">
+        <button class="yt" data-id="KKMKiQ-QN7Y" aria-label="ניגון השיעור: להילחם ולנצח"><img src="https://i.ytimg.com/vi/KKMKiQ-QN7Y/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">פרשה ומועדים</span><span>פרשת בשלח</span></div>
+        <h3>״להילחם ולנצח״</h3>
+      </article>
+      <article class="lesson reveal d2" data-cat="love">
+        <button class="yt" data-id="er2b8sdlyvQ" aria-label="ניגון השיעור: השדכן הגדול בעולם"><img src="https://i.ytimg.com/vi/er2b8sdlyvQ/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></button>
+        <div class="meta"><span class="tag">זוגיות</span></div>
+        <h3>השדכן הגדול בעולם</h3>
+      </article>
+    </div>
+    <p class="empty" hidden>אין שיעורים מלאים בנושא הזה עדיין – אבל יש סרטונים קצרים ומאמרים למטה.</p>
+  </div>
+</section>
+
+<section class="c-sec" id="shorts" aria-labelledby="sh-h">
+  <div class="wrap">
+    <div class="c-head">
+      <div>
+        <h2 id="sh-h" class="reveal">דקה עם הרב</h2>
+        <p class="reveal d1" style="margin-top:14px">סרטונים קצרים ומדויקים – לשמוע בדרך, ולשלוח למי שצריך.</p>
+      </div>
+      <div class="rail-nav reveal d1">
+        <button class="prev" aria-label="לסרטונים הקודמים" data-dir="-1"><svg><use href="#i-arrow"/></svg></button>
+        <button class="next" aria-label="לסרטונים הבאים" data-dir="1"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <div class="shorts" id="shortsRail" tabindex="0" aria-label="סרטונים קצרים">
+      <div class="short" data-cat="love"><button class="yt" data-id="p50YSaBsOPI" data-short aria-label="ניגון: סגולה גדולה למציאת שידוך"><img src="https://i.ytimg.com/vi/p50YSaBsOPI/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">סגולה גדולה למציאת שידוך</span></button><span class="tag" style="align-self:flex-start">זוגיות</span></div>
+      <div class="short" data-cat="love"><button class="yt" data-id="bqBoGbhU6Gc" data-short aria-label="ניגון: דייט מוצלח – להיות מושלמת, אבל לא מדי"><img src="https://i.ytimg.com/vi/bqBoGbhU6Gc/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">דייט מוצלח – מושלמת, אבל לא מדי</span></button><span class="tag" style="align-self:flex-start">זוגיות</span></div>
+      <div class="short" data-cat="love"><button class="yt" data-id="_oeaSRwl13E" data-short aria-label="ניגון: מה באמת חשוב בבחירת בן או בת זוג"><img src="https://i.ytimg.com/vi/_oeaSRwl13E/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">מה באמת חשוב בבחירת בן/בת זוג?</span></button><span class="tag" style="align-self:flex-start">זוגיות</span></div>
+      <div class="short" data-cat="love"><button class="yt" data-id="A5r8rPdp62s" data-short aria-label="ניגון: החלטה אובייקטיבית לזוגיות מדויקת"><img src="https://i.ytimg.com/vi/A5r8rPdp62s/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">החלטה אובייקטיבית לזוגיות מדויקת</span></button><span class="tag" style="align-self:flex-start">זוגיות</span></div>
+      <div class="short" data-cat="lead"><button class="yt" data-id="mx1IJugQye0" data-short aria-label="ניגון: מתי אחד שווה יותר ממאה"><img src="https://i.ytimg.com/vi/mx1IJugQye0/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">מתי אחד שווה יותר ממאה</span></button><span class="tag" style="align-self:flex-start">מנהיגות וצמיחה</span></div>
+      <div class="short" data-cat="lead"><button class="yt" data-id="CjXUmC9RsPs" data-short aria-label="ניגון: עמק האכזבות – ההצלחה ממש כאן"><img src="https://i.ytimg.com/vi/CjXUmC9RsPs/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">עמק האכזבות – ההצלחה ממש כאן</span></button><span class="tag" style="align-self:flex-start">מנהיגות וצמיחה</span></div>
+      <div class="short" data-cat="lead"><button class="yt" data-id="Sm-IEmuer-E" data-short aria-label="ניגון: תחילת הדרך – מה צריך להרגיש"><img src="https://i.ytimg.com/vi/Sm-IEmuer-E/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">תחילת הדרך – מה צריך להרגיש?</span></button><span class="tag" style="align-self:flex-start">מנהיגות וצמיחה</span></div>
+      <div class="short" data-cat="lead"><button class="yt" data-id="gyyzgPYVPNE" data-short aria-label="ניגון: תחילת הדרך – יש על מי לסמוך"><img src="https://i.ytimg.com/vi/gyyzgPYVPNE/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">תחילת הדרך – יש על מי לסמוך?!</span></button><span class="tag" style="align-self:flex-start">מנהיגות וצמיחה</span></div>
+    </div>
+    <p class="empty" hidden>אין סרטונים קצרים בנושא הזה עדיין.</p>
+  </div>
+</section>
+
+<section class="c-sec" id="articles" aria-labelledby="ar-h">
+  <div class="wrap">
+    <div class="c-head">
+      <h2 id="ar-h" class="reveal">מאמרים</h2>
+      <p class="reveal d1">מאמרים מאת הרב – לקרוא בשקט, לחשוב, ולחזור אליהם.</p>
+    </div>
+    <div class="arts">
+      <a class="art reveal" data-cat="lead" href="leadership.html#a-life"><span class="art-n">01</span><span class="tag" style="align-self:flex-start">מנהיגות וצמיחה</span><h3>הסתכלות יהודית על אתגרי החיים</h3><p>משברים, חוסר מימוש עצמי, פילוג חברתי – ומה עומד מאחורי התפיסה של אופק יהודי.</p><span class="art-more">לקריאת המאמר <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="art reveal d1" data-cat="love" href="matzpen.html#a-before"><span class="art-n">02</span><span class="tag" style="align-self:flex-start">זוגיות</span><h3>הדייט שלפני הדייט</h3><p>מחפשים בן או בת זוג? ה״קפה הראשון״ – קודם כל עם עצמכם.</p><span class="art-more">לקריאת המאמר <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="art reveal d2" data-cat="love" href="matzpen.html#a-puzzle"><span class="art-n">03</span><span class="tag" style="align-self:flex-start">זוגיות</span><h3>למה לפאזל יש בליטות?</h3><p>בן זוג מושלם – יש דבר כזה? על ההבדל בין ״מדהים״ ל״מתאים״.</p><span class="art-more">לקריאת המאמר <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="art reveal d3" data-cat="love" href="matzpen.html#a-notit"><span class="art-n">04</span><span class="tag" style="align-self:flex-start">זוגיות</span><h3>רגע לפני ״זה לא זה״</h3><p>לפעמים ההבדל בין דייט מוצלח למאכזב הוא הדברים שבחרת להתמקד בהם.</p><span class="art-more">לקריאת המאמר <svg><use href="#i-arrow"/></svg></span></a>
+    </div>
+    <p class="empty" hidden>אין מאמרים בנושא הזה עדיין.</p>
+  </div>
+</section>
+
+<section class="follow" aria-labelledby="fl-h">
+  <div class="wrap">
+    <div>
+      <h2 id="fl-h">רוצים את השיעור <span class="gold">הבא?</span></h2>
+      <p>הרשמו לערוץ היוטיוב או שלחו לנו הודעה, ונעדכן כשעולה תוכן חדש.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn-gold" href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-yt"/></svg> לערוץ היוטיוב</a>
+      <a class="btn btn-wa" href="https://wa.me/972527773050?text=%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D%20%D7%97%D7%93%D7%A9%D7%99%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg> עדכונים בוואטסאפ</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg aria-hidden="true"><use href="#ofek-mark"/></svg><span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span></a>
+        <p style="max-width:320px;margin:0 0 22px">העמקת הזהות היהודית, מנהיגות והכוונה לזוגיות – לצעירים, לחיילים, לסטודנטים ולזוגות צעירים.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="פייסבוק"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="יוטיוב"><svg><use href="#i-yt"/></svg></a>
+          <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="טיקטוק"><svg><use href="#i-tt"/></svg></a>
+        </div>
+      </div>
+      <div><h4><a href="leadership.html">יהדות ומנהיגות</a></h4><ul><li><a href="leadership.html#lectures">הרצאות וסדנאות</a></li><li><a href="leadership.html#programs">חיזוק בבסיסים</a></li><li><a href="leadership.html#programs">בית מדרש וחברותות</a></li><li><a href="leadership.html#book">הזמנת הרצאה</a></li></ul></div>
+      <div><h4><a href="matzpen.html">המצפן</a></h4><ul><li><a href="matzpen.html#tracks">קורס פרונטלי</a></li><li><a href="matzpen.html#tracks">קורס דיגיטלי</a></li><li><a href="matzpen.html#tracks">סדנאות</a></li></ul></div>
+      <div><h4>הארגון</h4><ul><li><a href="rabbi.html">הרב יוסף מלכה</a></li><li><a href="content.html" aria-current="page">תוכן ושיעורים</a></li><li><a href="index.html#donate">תרומות</a></li><li><a href="index.html#contact">צור קשר</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 כל הזכויות שמורות לארגון ״אופק יהודי״</span>
+      <nav aria-label="קישורים משפטיים"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a><a href="#">תקנון רכישה</a><a href="#">מדיניות תרומות</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/972527773050" target="_blank" rel="noopener" aria-label="שליחת הודעת וואטסאפ"><svg><use href="#i-wa"/></svg></a>
+<a class="a11y-float" href="accessibility.html" aria-label="הצהרת נגישות"><svg><use href="#i-a11y"/></svg></a>
+
+<script>
+(()=>{
+  const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hdr=$('#hdr'); const onScroll=()=>hdr.classList.toggle('solid',scrollY>40);
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  const burger=$('#burger');
+  burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');document.body.style.overflow=o?'hidden':''});
+  $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('menu-open'))burger.click()});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.reveal').forEach(el=>el.closest('.c-hero')?requestAnimationFrame(()=>el.classList.add('in')):io.observe(el));
+
+  // youtube lite (normal + shorts)
+  $$('.yt').forEach(b=>b.addEventListener('click',()=>{const w=document.createElement('div');w.className='yt playing';const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${b.dataset.id}?autoplay=1&rel=0&playsinline=1`;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title=b.getAttribute('aria-label').replace(/^ניגון[^:]*:\s*/,'');w.appendChild(f);b.replaceWith(w);f.focus()}));
+
+  // filters
+  const chips=$$('.chip'), status=$('#fStatus');
+  const names={all:'כל הנושאים',lead:'מנהיגות וצמיחה',love:'זוגיות',parasha:'פרשה ומועדים'};
+  const apply=f=>{
+    chips.forEach(c=>c.setAttribute('aria-pressed',c.dataset.f===f));
+    let total=0;
+    ['#lessons','#shorts','#articles'].forEach(id=>{const sec=$(id);const items=$$('[data-cat]',sec);let n=0;
+      items.forEach(it=>{const ok=f==='all'||it.dataset.cat.split(' ').includes(f);it.hidden=!ok;if(ok){n++;it.classList.add('in')}});
+      $('.empty',sec).hidden=n>0;const nav=$('.rail-nav',sec);if(nav)nav.hidden=n<3;total+=n});
+    $('#shortsRail').scrollTo({left:0});
+    status.textContent=`מוצגים ${total} פריטים בנושא ${names[f]}`;
+    history.replaceState(null,'',f==='all'?location.pathname:'#'+f);
+  };
+  chips.forEach(c=>c.addEventListener('click',()=>{apply(c.dataset.f);const top=$('#lessons').getBoundingClientRect().top+scrollY-140;if(scrollY>top)scrollTo({top,behavior:reduce?'auto':'smooth'})}));
+  const h=location.hash.slice(1); if(names[h]&&h!=='all')apply(h);
+
+  // shorts rail arrows (RTL: "next" moves left)
+  const rail=$('#shortsRail');
+  $$('.rail-nav button').forEach(b=>b.addEventListener('click',()=>{const step=(rail.querySelector('.short:not([hidden])')?.offsetWidth||240)+20;rail.scrollBy({left:-b.dataset.dir*step*2,behavior:reduce?'auto':'smooth'})}));
+})();
+</script>
+</body>
+</html>
