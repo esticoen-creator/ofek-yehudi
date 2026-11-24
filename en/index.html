@@ -1,22 +1,22 @@
 <!doctype html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>אופק יהודי | הרב יוסף מלכה – הרצאות, מנהיגות והכוונה לזוגיות</title>
-<meta name="description" content="ארגון אופק יהודי בראשות הרב יוסף מלכה: הרצאות וסדנאות ביהדות ומנהיגות לצעירים, חיילים וסטודנטים, וקורס המצפן – הדרך למציאת זוגיות יציבה ומדויקת.">
-<meta property="og:title" content="אופק יהודי | הרב יוסף מלכה">
-<meta property="og:description" content="ידע, ערכים וכלים לחיים משמעותיים יותר. הרצאות, מנהיגות והכוונה לזוגיות.">
-<meta property="og:image" content="assets/img/rabbi-portrait.jpg">
-<meta property="og:locale" content="he_IL">
-<link rel="alternate" hreflang="en" href="en/">
+<title>Ofek Yehudi | Rabbi Yosef Malka – Lectures, Leadership and Guidance Toward Marriage</title>
+<meta name="description" content="Ofek Yehudi, led by Rabbi Yosef Malka: lectures and workshops on Judaism and leadership for young people, soldiers and students, and HaMatzpen (The Compass) – a path to finding a stable, well-matched marriage.">
+<meta property="og:title" content="Ofek Yehudi | Rabbi Yosef Malka">
+<meta property="og:description" content="From the base to the chuppah: Jewish leadership for young people, and guidance toward building a home.">
+<meta property="og:image" content="../assets/img/rabbi-portrait.jpg">
+<meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="he" href="../">
+<link rel="alternate" hreflang="en" href="./">
 <meta name="theme-color" content="#0B1426">
-<link rel="preload" href="fonts/TelAviv-BrutalistBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../fonts/TelAviv-BrutalistBold.ttf" as="font" type="font/ttf" crossorigin>
 <style>
-@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistLight.ttf") format("truetype");font-weight:300;font-display:swap}
-@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistRegular.ttf") format("truetype");font-weight:400;font-display:swap}
-@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistBold.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("../fonts/TelAviv-BrutalistLight.ttf") format("truetype");font-weight:300;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("../fonts/TelAviv-BrutalistRegular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("../fonts/TelAviv-BrutalistBold.ttf") format("truetype");font-weight:700;font-display:swap}
 
 :root{
   --navy-950:#08101F;
@@ -104,53 +104,14 @@ section{position:relative}
 .menu-open .burger span:nth-child(2){opacity:0}
 .menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
-/* ---------- hero (scroll story) ---------- */
-.hero{height:320vh;background:var(--navy-950);color:#fff}
-.hero-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;padding:110px var(--side) 56px}
-.hero-txt{position:relative;z-index:2;max-width:min(640px,52vw)}
-.hero .eyebrow{margin-bottom:24px}
-.hero h1{font-size:clamp(40px,5.4vw,88px);max-width:11ch}
-.hero h1 .k{color:rgba(255,255,255,.28);transition:color .6s var(--ease)}
-.hero h1 .k.on{color:#fff}
-.hero h1 .k.on.g{color:var(--gold)}
-.caps{position:relative;min-height:96px;margin:30px 0 34px;max-width:480px}
-.cap{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s var(--ease)}
-.cap.on{opacity:1;transform:none}
-.cap b{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold-soft);margin-bottom:8px;font-weight:400}
-.cap p{margin:0;color:#C9D0DF;font-weight:300;font-size:clamp(17px,1.35vw,20px);line-height:1.55}
-.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
-.prog-dots{display:flex;gap:8px;margin-top:40px}
-.prog-dots i{height:2px;width:48px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
-.prog-dots i::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(var(--f,0));transform-origin:right}
-.hero-frame{position:absolute;inset:0;z-index:0}
-.frame-in{position:absolute;inset:0;overflow:hidden;background:var(--navy-950);transform:scale(var(--sc,1.06));transform-origin:30% 40%}
-.frame-in>*{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.4s cubic-bezier(.4,0,.2,1),transform 2.2s var(--ease)}
-.frame-in>.on{opacity:1;transform:scale(1)}
-.vwrap .vbg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;filter:blur(28px) brightness(.55) saturate(.9)}
-.vwrap video{position:absolute;top:0;bottom:0;left:5%;margin:auto 0;width:58%;height:70%;object-fit:cover;object-position:38% 20%;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);mask-composite:intersect}
-.vwrap:first-child video{width:52%;height:62%}
-.frame-in::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to left,rgba(8,16,31,.94) 22%,rgba(8,16,31,.6) 48%,rgba(8,16,31,.12) 78%),linear-gradient(to top,rgba(8,16,31,.75),transparent 35%),linear-gradient(to bottom,rgba(8,16,31,.55),transparent 22%)}
+/* ---------- video pause button ---------- */
 .vid-toggle{position:absolute;inset-inline-end:calc(var(--side) + 76px);bottom:72px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(8,16,31,.6);border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 12px;font-size:12px;border-radius:40px;backdrop-filter:blur(4px)}
 .vid-toggle:hover{border-color:var(--gold)}
 .vid-toggle i{display:inline-block;width:9px;height:10px;border-inline:3px solid currentColor}
 .vid-toggle.paused i{border:0;width:0;height:0;border-block:5px solid transparent;border-inline-end:9px solid currentColor}
 .vid-toggle[hidden]{display:none}
 @media (max-width:900px){
-  .hero{height:300vh}
   .hdr,.hdr.solid{padding-block:10px}
-  .hero-stage{align-items:flex-end;padding:84px var(--gutter) 92px}
-  .hero-txt{max-width:none}
-  .frame-in::after{background:linear-gradient(to top,rgba(8,16,31,.97) 30%,rgba(8,16,31,.55) 58%,rgba(8,16,31,.15) 80%),linear-gradient(to bottom,rgba(8,16,31,.6),transparent 20%)}
-  .frame-in>img{object-position:40% 15%}
-  .vwrap video{top:64px;bottom:auto;left:0;width:100%;height:auto;aspect-ratio:3/2;object-position:center;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%);mask-image:linear-gradient(to top,transparent 0,#000 30%)}
-  .vwrap:first-child video{width:80%;left:10%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);mask-composite:intersect}
-  .vid-toggle{bottom:auto;top:calc(64px + 66.6vw - 46px);inset-inline-end:12px}
-  .hero .eyebrow{margin-bottom:12px}
-  .hero h1{font-size:clamp(30px,8.6vw,46px);max-width:none}
-  .caps{min-height:78px;margin:16px 0 18px}
-  .cap p{font-size:16px}
-  .hero-btns .btn{padding:13px 16px;font-size:15px}
-  .prog-dots{display:none}
 }
 
 
@@ -160,6 +121,11 @@ section{position:relative}
 .wordfx span{color:rgba(22,33,58,.16);transition:color .25s}
 .wordfx span.on{color:var(--ink)}
 .wordfx span.g.on{color:var(--gold-deep)}
+.pillars{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px)}
+.pillars li{border-top:2px solid var(--gold);padding-top:18px}
+.pillars b{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold-deep);margin-bottom:8px;font-weight:700}
+.pillars p{margin:0;color:var(--ink-soft);font-size:clamp(16px,1.15vw,18px)}
+@media (max-width:900px){.pillars{grid-template-columns:1fr}}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(22,33,58,.15)}
 .stat{padding:32px 0 0;padding-inline-end:24px}
 .stat+.stat{border-inline-start:1px solid rgba(22,33,58,.15);padding-inline-start:28px}
@@ -468,16 +434,32 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   .picks{gap:12px}
   .mq-toggle{top:250px;bottom:auto;inset-inline-start:auto;inset-inline-end:var(--gutter);padding:6px 10px;font-size:11px}
 }
+/* ---------- English (LTR) adjustments ---------- */
+.mq-t>div{direction:ltr}
+/* Tel Aviv's Latin set is capitals only: keep it for headings, buttons and labels; running text in a readable sans */
+p,li,blockquote,figcaption,label,input,select,textarea,.acc-panel,.c-list span,.foot p,.t-who span,.don-item p,.value p,.track p,.track li{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.eyebrow,.wordfx,.st-line,.pillars b,.c-list small{font-family:"Tel Aviv",system-ui,sans-serif}
+.hero3 h1{font-size:clamp(40px,5vw,84px)}
+.pick b{font-size:clamp(19px,1.5vw,23px)}
+.wordfx{font-size:clamp(22px,2.6vw,40px)}
+@media (max-width:900px){.hero3 h1{font-size:clamp(30px,8.6vw,44px)}.pick b{font-size:18px}.pick small{font-size:11px}}
+.btn:hover svg,.world:hover .more svg,.pick:hover svg{transform:translateX(4px)}
+.donate::before{background:linear-gradient(to right,rgba(8,16,31,.96) 30%,rgba(8,16,31,.7))}
+@media (min-width:901px){
+  .mq-toggle{inset-inline-start:auto;inset-inline-end:var(--side)}
+  .scene{perspective-origin:68% 50%}
+  .vfar{left:10%;-webkit-mask-image:radial-gradient(ellipse 54% 54% at 62% 50%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse 54% 54% at 62% 50%,#000 30%,transparent 78%)}
+  .hero3::after{background:linear-gradient(to right,rgba(8,16,31,.96) 26%,rgba(8,16,31,.7) 46%,rgba(8,16,31,.08) 74%),linear-gradient(to top,rgba(8,16,31,.6),transparent 25%)}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
-  .hero{height:auto}.hero-stage{position:relative;height:auto;min-height:100vh}
   .wordfx span{color:var(--ink)}
 }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">דילוג לתוכן</a>
+<a class="skip" href="#main">Skip to content</a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -486,7 +468,7 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
       <path d="M965 575 1100 800 965 1037 830 800Z" fill="#BFE9F7" opacity=".55"/>
       <path d="M760 678h135q55 12 90 107q25-95 75-107h112l-72 122 72 130h-112q-80-10-110-110q-25 100-80 110H760l70-130Z" fill="url(#lg-ofek)"/>
     </symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
@@ -501,22 +483,22 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="אופק יהודי – לדף הבית">
+    <a class="logo" href="#top" aria-label="Ofek Yehudi – home">
       <svg aria-hidden="true"><use href="#ofek-mark"/></svg>
-      <span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span>
+      <span class="logo-txt"><b>Ofek Yehudi</b><small>Young Leaders for Success</small></span>
     </a>
-    <nav class="nav" id="nav" aria-label="ניווט ראשי">
-      <a href="leadership.html">יהדות ומנהיגות</a>
-      <a href="matzpen.html">המצפן</a>
-      <a href="rabbi.html">הרב יוסף מלכה</a>
-      <a href="content.html">תוכן ושיעורים</a>
-      <a href="#contact">צור קשר</a>
-      <span class="m-extra"><a class="lang" href="en/" lang="en">English</a><a class="btn btn-gold" href="#donate">תרמו</a></span>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#programs">Judaism &amp; Leadership</a>
+      <a href="#matzpen">HaMatzpen</a>
+      <a href="#rabbi">Rabbi Yosef Malka</a>
+      <a href="#videos">Lessons</a>
+      <a href="#contact">Contact</a>
+      <span class="m-extra"><a class="lang" href="../" lang="he">עברית</a><a class="btn btn-gold" href="#donate">Donate</a></span>
     </nav>
     <div class="hdr-cta">
-      <a class="lang" href="en/" lang="en" hreflang="en">EN</a>
-      <a class="btn btn-gold" href="#donate">תרמו</a>
-      <button class="burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <a class="lang" href="../" lang="he" hreflang="he">עב</a>
+      <a class="btn btn-gold" href="#donate">Donate</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -528,51 +510,51 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   <div class="scene" aria-hidden="true">
     <div class="stage">
       <div class="vfar">
-        <video class="hv on" autoplay muted loop playsinline preload="metadata" poster="assets/video/lecture-poster.jpg"><source src="assets/video/lecture.mp4" type="video/mp4"></video>
-        <video class="hv" muted loop playsinline preload="none" poster="assets/video/hero-poster.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+        <video class="hv on" autoplay muted loop playsinline preload="metadata" poster="../assets/video/lecture-poster.jpg"><source src="../assets/video/lecture.mp4" type="video/mp4"></video>
+        <video class="hv" muted loop playsinline preload="none" poster="../assets/video/hero-poster.jpg"><source src="../assets/video/hero.mp4" type="video/mp4"></video>
       </div>
-      <div class="mq back r1 t-lead"><div class="mq-t"><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div></div></div>
-      <div class="mq back r3 t-mz"><div class="mq-t"><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div></div></div>
+      <div class="mq back r1 t-lead"><div class="mq-t"><div><span>Leadership</span><i>✦</i><span>Jewish Identity</span><i>✦</i><span>Responsibility</span><i>✦</i><span>Solidarity</span><i>✦</i><span>Strength on Base</span><i>✦</i></div><div><span>Leadership</span><i>✦</i><span>Jewish Identity</span><i>✦</i><span>Responsibility</span><i>✦</i><span>Solidarity</span><i>✦</i><span>Strength on Base</span><i>✦</i></div></div></div>
+      <div class="mq back r3 t-mz"><div class="mq-t"><div><span>Chuppah</span><i>✦</i><span>Shalom Bayit</span><i>✦</i><span>Young Couples</span><i>✦</i><span>Faith</span><i>✦</i><span>Growth</span><i>✦</i></div><div><span>Chuppah</span><i>✦</i><span>Shalom Bayit</span><i>✦</i><span>Young Couples</span><i>✦</i><span>Faith</span><i>✦</i><span>Growth</span><i>✦</i></div></div></div>
     </div>
   </div>
   <div class="scene scene-front" aria-hidden="true">
     <div class="stage">
-      <div class="mq front r2 t-mz"><div class="mq-t"><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div></div></div>
-      <div class="mq front r4 t-lead"><div class="mq-t"><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div></div></div>
+      <div class="mq front r2 t-mz"><div class="mq-t"><div><span>Relationships</span><i>✦</i><span>The Compass</span><i>✦</i><span>Building a Home</span><i>✦</i><span>Listening</span><i>✦</i><span>The Right Choice</span><i>✦</i></div><div><span>Relationships</span><i>✦</i><span>The Compass</span><i>✦</i><span>Building a Home</span><i>✦</i><span>Listening</span><i>✦</i><span>The Right Choice</span><i>✦</i></div></div></div>
+      <div class="mq front r4 t-lead"><div class="mq-t"><div><span>Beit Midrash</span><i>✦</i><span>Weekly Parasha</span><i>✦</i><span>Lectures</span><i>✦</i><span>Study Days</span><i>✦</i><span>Pre-Army Academies</span><i>✦</i></div><div><span>Beit Midrash</span><i>✦</i><span>Weekly Parasha</span><i>✦</i><span>Lectures</span><i>✦</i><span>Study Days</span><i>✦</i><span>Pre-Army Academies</span><i>✦</i></div></div></div>
     </div>
   </div>
   <div class="h3-in">
-    <p class="eyebrow reveal">ארגון אופק יהודי · ירושלים</p>
-    <h1 class="reveal d1" id="h3-title">מהבסיס <span class="g">ועד החופה.</span></h1>
-    <p class="h3-sub reveal d2">הרב יוסף מלכה מלווה צעירים בשני רגעים שמעצבים חיים: כשהם לומדים להוביל, וכשהם בונים בית.</p>
+    <p class="eyebrow reveal">Ofek Yehudi · Jerusalem</p>
+    <h1 class="reveal d1" id="h3-title">From the base <span class="g">to the chuppah.</span></h1>
+    <p class="h3-sub reveal d2">Rabbi Yosef Malka guides young people through two moments that shape a life: when they learn to lead, and when they build a home.</p>
     <div class="picks reveal d3">
-      <a class="pick pick-lead" href="leadership.html" data-hl="lead">
-        <small>לבסיסים, ישיבות, מכינות וארגונים</small>
-        <b>יהדות ומנהיגות</b>
-        <span>להזמנת הרצאה <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      <a class="pick pick-lead" href="#programs" data-hl="lead">
+        <small>For army bases, yeshivas, academies and organizations</small>
+        <b>Judaism &amp; Leadership</b>
+        <span>Book a lecture <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
       </a>
-      <a class="pick pick-mz" href="matzpen.html" data-hl="mz">
-        <small>לרווקים ורווקות</small>
-        <b>המצפן – הדרך לזוגיות</b>
-        <span>להכיר את הקורס <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      <a class="pick pick-mz" href="#matzpen" data-hl="mz">
+        <small>For single men and women</small>
+        <b>HaMatzpen – The Path to Marriage</b>
+        <span>Discover the course <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
       </a>
     </div>
   </div>
-  <button class="vid-toggle mq-toggle" id="mqToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת תנועה ווידאו</span></button>
+  <button class="vid-toggle mq-toggle" id="mqToggle" aria-pressed="false"><i aria-hidden="true"></i><span>Pause motion &amp; video</span></button>
 </section>
 
 <!-- 01 RABBI -->
 <section class="sec dark" id="rabbi" aria-labelledby="rabbi-h" style="background:var(--navy-800)">
   <div class="wrap rabbi">
     <figure class="rabbi-img reveal" style="margin:0">
-      <img src="assets/img/rabbi-portrait.jpg" alt="הרב יוסף מלכה" loading="lazy">
+      <img src="../assets/img/rabbi-portrait.jpg" alt="Rabbi Yosef Malka" loading="lazy">
     </figure>
     <div class="rabbi-txt">
-      <p class="eyebrow"><b>01</b>מי עומד מאחורי הדרך</p>
-      <h2 id="rabbi-h" class="h-l reveal">הרב יוסף מלכה</h2>
-      <p class="lead reveal d1">מחנך, מרצה ומנחה זוגיות, שמלווה כבר למעלה מעשרים שנה צעירים, חיילים וזוגות צעירים. בהרצאות בבסיסים, בבית המדרש ובקבוצות הבוטיק, הוא מחבר בין מקורות היהדות לבין כלים מעשיים לחיים.</p>
-      <blockquote class="quote reveal d2">״מנהיג אמיתי לוקח אחריות, מקשיב לאחר והראשון לסייע לכל.״<cite>מתוך ערכי אופק יהודי</cite></blockquote>
-      <a class="btn btn-line reveal d3" href="rabbi.html">לסיפור המלא <svg><use href="#i-arrow"/></svg></a>
+      <p class="eyebrow"><b>01</b>Who leads the way</p>
+      <h2 id="rabbi-h" class="h-l reveal">Rabbi Yosef Malka</h2>
+      <p class="lead reveal d1">An educator, lecturer and relationship guide who has accompanied young people, soldiers and young couples for more than twenty years. In lectures on army bases, in the beit midrash and in small boutique groups, he connects the sources of Judaism with practical tools for life.</p>
+      <blockquote class="quote reveal d2">“A true leader takes responsibility, listens to others and is the first to help everyone.”<cite>From the values of Ofek Yehudi</cite></blockquote>
+      <a class="btn btn-line reveal d3" href="../rabbi.html" hreflang="he">Full story (Hebrew) <svg><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </section>
@@ -581,18 +563,23 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <section class="sec" id="about" aria-labelledby="about-h">
   <div class="wrap about-grid">
     <div>
-      <p class="eyebrow"><b>02</b>אודות הארגון</p>
-      <h2 id="about-h" class="sr">אודות אופק יהודי</h2>
-      <p class="wordfx" id="wordfx" data-gold="הזהות,היהודית,כלים,פרקטיים,לחיים.">בחברה הישראלית יש היום חיפוש ער אחר הזהות היהודית. אופק יהודי פועל להעמיק אותה בקרב צעירים, חיילים, סטודנטים וזוגות צעירים – בשיעורים, בהרצאות מרתקות ובסדנאות עם כלים פרקטיים לחיים.</p>
+      <p class="eyebrow"><b>02</b>About us</p>
+      <h2 id="about-h" class="sr">About Ofek Yehudi</h2>
+      <p class="wordfx" id="wordfx" data-gold="Jewish,identity.,practical,tools,life.">Israeli society today is searching for its Jewish identity. Ofek Yehudi works to deepen it among young people, soldiers, students and young couples – through classes, inspiring lectures and workshops with practical tools for life.</p>
+      <ul class="pillars">
+        <li class="reveal"><b>01 · Knowledge</b><p>Inspiring lectures and classes from the sources of Judaism, with Rabbi Yosef Malka.</p></li>
+        <li class="reveal d1"><b>02 · Values</b><p>Leadership, responsibility and caring – on army bases, in the beit midrash and in the community.</p></li>
+        <li class="reveal d2"><b>03 · Tools for life</b><p>Guidance toward a stable, well-matched marriage in the Matzpen course, and workshops for young couples.</p></li>
+      </ul>
     </div>
     <div class="stats">
-      <div class="stat reveal"><b data-count="20">0<em>+</em></b><span>שנים של חיזוק בבסיסים צבאיים</span></div>
-      <div class="stat reveal d1"><b data-count="120">0</b><span>חיילים בודדים בליווי צמוד</span></div>
-      <div class="stat reveal d2"><b data-count="50">0</b><span>ימי חיזוק ואירועים בחודש</span></div>
+      <div class="stat reveal"><b data-count="20">0<em>+</em></b><span>years of strengthening soldiers on army bases</span></div>
+      <div class="stat reveal d1"><b data-count="120">0</b><span>lone soldiers with close, ongoing support</span></div>
+      <div class="stat reveal d2"><b data-count="50">0</b><span>strengthening days and events every month</span></div>
     </div>
     <figure class="about-img reveal" style="margin:0">
-      <img src="assets/img/soldiers-talk.jpg" alt="הרב יוסף מלכה משוחח עם חיילים בשטח" loading="lazy" data-parallax>
-      <figcaption>שיחת חיזוק עם לוחמים · 2024</figcaption>
+      <img src="../assets/img/soldiers-talk.jpg" alt="Rabbi Yosef Malka talking with soldiers in the field" loading="lazy" data-parallax>
+      <figcaption>A strengthening talk with combat soldiers · 2024</figcaption>
     </figure>
   </div>
 </section>
@@ -602,51 +589,51 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   <div class="wrap">
     <div class="prog-head">
       <div>
-        <p class="eyebrow"><b>03</b>יהדות, הרצאות ומנהיגות</p>
-        <h2 id="prog-h" class="h-l reveal">תוכניות שמשאירות <span style="color:var(--gold-deep)">חותם.</span></h2>
+        <p class="eyebrow"><b>03</b>Judaism, lectures &amp; leadership</p>
+        <h2 id="prog-h" class="h-l reveal">Programs that <span style="color:var(--gold-deep)">leave a mark.</span></h2>
       </div>
-      <p class="lead reveal d1">שיעורים, הרצאות וסדנאות ממקורות היהדות, בשילוב כלים מקצועיים – בהתאמה לכל קהל ולכל מוסד.</p>
+      <p class="lead reveal d1">Classes, lectures and workshops from the sources of Judaism, combined with professional tools – tailored to every audience and institution.</p>
     </div>
     <div class="prog">
       <div>
         <div class="acc" id="acc">
           <div class="acc-item open" data-img="0">
-            <button class="acc-btn" aria-expanded="true" id="a1" aria-controls="p1"><span class="acc-num">01</span><span class="acc-title">הרצאות וסדנאות</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p1" role="region" aria-labelledby="a1"><div><p>הרצאות מרתקות בנושאי זהות יהודית, ערכים ומנהיגות, וסדנאות מגוונות עם כלים פרקטיים לחיים – למוסדות, לארגונים ולקהילות.</p></div></div>
+            <button class="acc-btn" aria-expanded="true" id="a1" aria-controls="p1"><span class="acc-num">01</span><span class="acc-title">Lectures &amp; workshops</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p1" role="region" aria-labelledby="a1"><div><p>Inspiring lectures on Jewish identity, values and leadership, and a range of workshops with practical tools for life – for institutions, organizations and communities.</p></div></div>
           </div>
           <div class="acc-item" data-img="1">
-            <button class="acc-btn" aria-expanded="false" id="a2" aria-controls="p2"><span class="acc-num">02</span><span class="acc-title">חיזוק בבסיסים צבאיים</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p2" role="region" aria-labelledby="a2"><div><p>למעלה מעשרים שנה של שיעורי חיזוק בבסיסים, ובמיוחד בתקופות של מבצעים ומלחמה. שיתוף פעולה ייחודי עם לוחמי ״נצח יהודה״.</p></div></div>
+            <button class="acc-btn" aria-expanded="false" id="a2" aria-controls="p2"><span class="acc-num">02</span><span class="acc-title">Strengthening on army bases</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p2" role="region" aria-labelledby="a2"><div><p>More than twenty years of strengthening classes on army bases, especially during military operations and war, in a unique partnership with the soldiers of “Netzach Yehuda”.</p></div></div>
           </div>
           <div class="acc-item" data-img="2">
-            <button class="acc-btn" aria-expanded="false" id="a3" aria-controls="p3"><span class="acc-num">03</span><span class="acc-title">ליווי חיילים בודדים</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p3" role="region" aria-labelledby="a3"><div><p>קרוב ל־120 חיילים בודדים בדירות מותאמות, במסגרת מקצועית ותומכת – כולל סופי שבוע משותפים וליווי רוחני ומקצועי.</p></div></div>
+            <button class="acc-btn" aria-expanded="false" id="a3" aria-controls="p3"><span class="acc-num">03</span><span class="acc-title">Supporting lone soldiers</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p3" role="region" aria-labelledby="a3"><div><p>Close to 120 lone soldiers in suitable apartments, within a professional and supportive framework – including shared weekends and spiritual and professional guidance.</p></div></div>
           </div>
           <div class="acc-item" data-img="3">
-            <button class="acc-btn" aria-expanded="false" id="a4" aria-controls="p4"><span class="acc-num">04</span><span class="acc-title">בית מדרש וחברותות</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p4" role="region" aria-labelledby="a4"><div><p>בית מדרש לצעירים ושיעורי ערב לבוגרי צבא, לימוד בחברותות בשיתוף בתי מדרש שונים, והכשרת אברכים בלימודי הלכה וידיעת הש״ס.</p></div></div>
+            <button class="acc-btn" aria-expanded="false" id="a4" aria-controls="p4"><span class="acc-num">04</span><span class="acc-title">Beit midrash &amp; chavruta study</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p4" role="region" aria-labelledby="a4"><div><p>A beit midrash for young people and evening classes for army veterans, chavruta study with partner batei midrash, and training for avrechim in halacha and Talmud.</p></div></div>
           </div>
           <div class="acc-item" data-img="4">
-            <button class="acc-btn" aria-expanded="false" id="a5" aria-controls="p5"><span class="acc-num">05</span><span class="acc-title">מלגות ומנהיגות צעירה</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p5" role="region" aria-labelledby="a5"><div><p>תוכנית מלגות לבוגרי צבא ולסטודנטים, לצד תוכנית מנהיגות והעצמה אישית – כי אנחנו גאים לגדל מנהיגים צעירים.</p></div></div>
+            <button class="acc-btn" aria-expanded="false" id="a5" aria-controls="p5"><span class="acc-num">05</span><span class="acc-title">Scholarships &amp; young leadership</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p5" role="region" aria-labelledby="a5"><div><p>A scholarship program for army veterans and students, alongside a leadership and personal empowerment program – because we are proud to raise young leaders.</p></div></div>
           </div>
           <div class="acc-item" data-img="5">
-            <button class="acc-btn" aria-expanded="false" id="a6" aria-controls="p6"><span class="acc-num">06</span><span class="acc-title">סדנאות לזוגות צעירים</span><span class="acc-ico" aria-hidden="true"></span></button>
-            <div class="acc-panel" id="p6" role="region" aria-labelledby="a6"><div><p>הדרכה מקיפה ומקצועית ב״קבוצות בוטיק״ ביסודות הבית היהודי, באתגרי הזוגיות ובחינוך הילדים.</p></div></div>
+            <button class="acc-btn" aria-expanded="false" id="a6" aria-controls="p6"><span class="acc-num">06</span><span class="acc-title">Workshops for young couples</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p6" role="region" aria-labelledby="a6"><div><p>Comprehensive, professional guidance in small “boutique groups” on the foundations of the Jewish home, the challenges of marriage and raising children.</p></div></div>
           </div>
         </div>
         <div class="prog-cta">
-          <a class="btn btn-ink" href="#contact" data-topic="lecture">להזמנת הרצאה או סדנה <svg><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-ink-line" href="leadership.html">לעמוד יהדות ומנהיגות <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ink" href="#contact" data-topic="lecture">Book a lecture or workshop <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ink-line" href="../leadership.html" hreflang="he">Judaism &amp; Leadership page (Hebrew) <svg><use href="#i-arrow"/></svg></a>
         </div>
       </div>
       <div class="prog-visual" aria-hidden="true">
-        <img class="show" src="assets/img/youth-lecture.jpg" alt="" loading="lazy">
-        <img src="assets/img/base-netting.jpg" alt="" loading="lazy">
-        <img src="assets/img/base-tent.jpg" alt="" loading="lazy">
-        <img src="assets/img/beit-midrash.jpg" alt="" loading="lazy">
-        <img src="assets/img/classroom.jpg" alt="" loading="lazy">
-        <img src="assets/img/lecture-hall.jpg" alt="" loading="lazy">
+        <img class="show" src="../assets/img/youth-lecture.jpg" alt="" loading="lazy">
+        <img src="../assets/img/base-netting.jpg" alt="" loading="lazy">
+        <img src="../assets/img/base-tent.jpg" alt="" loading="lazy">
+        <img src="../assets/img/beit-midrash.jpg" alt="" loading="lazy">
+        <img src="../assets/img/classroom.jpg" alt="" loading="lazy">
+        <img src="../assets/img/lecture-hall.jpg" alt="" loading="lazy">
       </div>
     </div>
   </div>
@@ -657,35 +644,35 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   <svg class="mz-rose" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#9C7A3C" stroke-width=".3"><circle cx="50" cy="50" r="48"/><circle cx="50" cy="50" r="38"/><path d="M50 2v96M2 50h96M16 16l68 68M84 16 16 84"/></g><path d="M50 6 56 44 94 50 56 56 50 94 44 56 6 50 44 44Z" fill="#9C7A3C"/></svg>
   <div class="wrap">
     <div class="mz-top">
-      <img src="assets/img/matzpen-logo.png" alt="לוגו קורס המצפן" loading="lazy">
+      <img src="../assets/img/matzpen-logo.png" alt="HaMatzpen course logo" loading="lazy">
       <div>
-        <p class="eyebrow" style="color:var(--gold-deep)"><b>04</b>קורס המצפן</p>
-        <h2 id="mz-h" class="h-l reveal">הדרך למציאת זוגיות <span style="color:var(--gold-deep)">יציבה ומדויקת.</span></h2>
-        <p class="lead reveal d1">מודל ״המצפן״ של הרב יוסף מלכה הוא תוכנית הכנה לזוגיות לרווקים ולרווקות – לפגישות, לדייטים ולבחירה הנכונה לקראת חתונה. בוחרים את המסלול שמתאים לכם:</p>
-        <a class="btn btn-ink-line reveal d2" href="matzpen.html" style="margin-top:8px">להכיר את שיטת המצפן <svg><use href="#i-arrow"/></svg></a>
+        <p class="eyebrow" style="color:var(--gold-deep)"><b>04</b>The Matzpen course</p>
+        <h2 id="mz-h" class="h-l reveal">The path to a marriage that is <span style="color:var(--gold-deep)">stable and right for you.</span></h2>
+        <p class="lead reveal d1">Rabbi Yosef Malka’s “Matzpen” (Compass) model is a marriage-preparation program for single men and women – for meetings, dates and making the right choice on the way to the chuppah. Choose the track that suits you:</p>
+        <a class="btn btn-ink-line reveal d2" href="../matzpen.html" hreflang="he" style="margin-top:8px">The Matzpen method (Hebrew) <svg><use href="#i-arrow"/></svg></a>
       </div>
     </div>
     <div class="tracks">
       <article class="track reveal">
-        <div class="track-n"><span>מסלול 01</span><span class="badge">המחזור הבא – בקרוב</span></div>
-        <h3 class="h-m">קורס פרונטלי</h3>
-        <p>מפגשים קבוצתיים בהנחיית הרב, בקבוצה קטנה ואינטימית, עם ליווי אישי לאורך הדרך.</p>
-        <ul><li>מפגשים קבוצתיים בירושלים</li><li>תרגול, שאלות וליווי אישי</li><li>מועדים ומיקום יפורסמו בקרוב</li></ul>
-        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">השאירו פרטים <svg><use href="#i-arrow"/></svg></a>
+        <div class="track-n"><span>Track 01</span><span class="badge">Next group – coming soon</span></div>
+        <h3 class="h-m">In-person course</h3>
+        <p>Group sessions led by the Rabbi, in a small, intimate group, with personal guidance along the way.</p>
+        <ul><li>Group sessions in Jerusalem</li><li>Practice, questions and personal guidance</li><li>Dates and location will be announced soon</li></ul>
+        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">Leave your details <svg><use href="#i-arrow"/></svg></a>
       </article>
       <article class="track feat reveal d1">
-        <div class="track-n"><span>מסלול 02</span><span class="badge" style="background:var(--gold);color:var(--navy-950)">זמין עכשיו</span></div>
-        <h3 class="h-m">קורס דיגיטלי</h3>
-        <p>כל שיטת המצפן בשיעורים מצולמים – לומדים בקצב שלכם, מכל מקום ובכל זמן.</p>
-        <ul><li>פרקי וידאו מסודרים לפי שלבים</li><li>גישה מיידית אחרי הרכישה</li><li>אפשר לחזור לתכנים בכל זמן</li></ul>
-        <a class="btn btn-gold" href="#" data-schoolers>לפרטים ולרכישה <svg><use href="#i-arrow"/></svg></a>
+        <div class="track-n"><span>Track 02</span><span class="badge" style="background:var(--gold);color:var(--navy-950)">Available now</span></div>
+        <h3 class="h-m">Digital course</h3>
+        <p>The full Matzpen method in recorded lessons (in Hebrew) – learn at your own pace, anywhere, anytime.</p>
+        <ul><li>Video chapters organized step by step</li><li>Immediate access after purchase</li><li>Return to the material anytime</li></ul>
+        <a class="btn btn-gold" href="#" data-schoolers>Details &amp; purchase <svg><use href="#i-arrow"/></svg></a>
       </article>
       <article class="track reveal d2">
-        <div class="track-n"><span>מסלול 03</span></div>
-        <h3 class="h-m">סדנאות</h3>
-        <p>סדנאות ממוקדות לרווקים ולרווקות, ולקבוצות ומוסדות שרוצים להביא את המצפן אליהם.</p>
-        <ul><li>סדנאות פתוחות וסגורות</li><li>מותאם לקהילות ולמוסדות</li><li>אפשר להזמין לכל מקום בארץ</li></ul>
-        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">לפרטים ולהרשמה <svg><use href="#i-arrow"/></svg></a>
+        <div class="track-n"><span>Track 03</span></div>
+        <h3 class="h-m">Workshops</h3>
+        <p>Focused workshops for single men and women, and for groups and institutions that want to bring the Matzpen to them.</p>
+        <ul><li>Open and private workshops</li><li>Tailored to communities and institutions</li><li>Available anywhere in Israel</li></ul>
+        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">Details &amp; registration <svg><use href="#i-arrow"/></svg></a>
       </article>
     </div>
   </div>
@@ -694,16 +681,16 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <!-- STATEMENT + VALUES -->
 <section class="sec statement" aria-labelledby="val-h">
   <div class="wrap">
-    <p class="st-line reveal" aria-hidden="true"><span>מקשיבים יותר.</span><span class="o">אומרים פחות.</span></p>
-    <p class="eyebrow"><b>✦</b>הערכים שלנו</p>
-    <h2 id="val-h" class="sr">הערכים שלנו</h2>
+    <p class="st-line reveal" aria-hidden="true"><span>Listen more.</span><span class="o">Say less.</span></p>
+    <p class="eyebrow"><b>✦</b>Our values</p>
+    <h2 id="val-h" class="sr">Our values</h2>
     <div class="values">
-      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3 14.5 9.5 21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></svg><h3>אמונה ובטחון</h3><p>חיבור למסורת היהודית, וחיזוק הידיעה והאמונה בבורא.</p></div>
-      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg><h3>מנהיגות</h3><p>מנהיג אמיתי לוקח אחריות, מקשיב לאחר והראשון לסייע לכל.</p></div>
-      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h3>אחריות</h3><p>רק כשנושאים בתוצאות המעשים אפשר להתבונן, להחכים ולחשב מסלול מחדש.</p></div>
-      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 10a5 5 0 0 1 10 0c0 3-3 4-3 7a2.5 2.5 0 0 1-5 0"/><path d="M10 10a2 2 0 0 1 4 0"/></svg><h3>הקשבה</h3><p>מקשיבים יותר ואומרים פחות – זה הסוד לקשרים חזקים ולהשפעה אמיתית.</p></div>
-      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg><h3>אכפתיות</h3><p>להכיר היטב את צורכי הזולת, להזדהות איתו ולפעול למענו.</p></div>
-      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20 10 14l4 4 6-8"/><path d="M15 10h5v5"/></svg><h3>התפתחות</h3><p>מי שמשקיע בעבודה פנימית ובהתפתחות אישית, משפיע גם על סביבתו.</p></div>
+      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3 14.5 9.5 21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></svg><h3>Faith &amp; trust</h3><p>Connection to Jewish tradition, and strengthening knowledge of and faith in the Creator.</p></div>
+      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg><h3>Leadership</h3><p>A true leader takes responsibility, listens to others and is the first to help everyone.</p></div>
+      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h3>Responsibility</h3><p>Only when we own the results of our actions can we reflect, grow wiser and find a new course.</p></div>
+      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 10a5 5 0 0 1 10 0c0 3-3 4-3 7a2.5 2.5 0 0 1-5 0"/><path d="M10 10a2 2 0 0 1 4 0"/></svg><h3>Listening</h3><p>Listen more and say less – that is the secret of strong relationships and real influence.</p></div>
+      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg><h3>Caring</h3><p>Truly knowing what others need, identifying with them and acting on their behalf.</p></div>
+      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20 10 14l4 4 6-8"/><path d="M15 10h5v5"/></svg><h3>Growth</h3><p>Whoever invests in inner work and personal growth also influences those around them.</p></div>
     </div>
   </div>
 </section>
@@ -711,28 +698,29 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <!-- 05 VIDEOS -->
 <section class="sec" id="videos" aria-labelledby="vid-h">
   <div class="wrap">
-    <p class="eyebrow" style="color:var(--gold-deep)"><b>05</b>תוכן ושיעורים</p>
-    <h2 id="vid-h" class="h-l reveal">שיעורים <span style="color:var(--gold-deep)">נבחרים.</span></h2>
+    <p class="eyebrow" style="color:var(--gold-deep)"><b>05</b>Lessons</p>
+    <h2 id="vid-h" class="h-l reveal">Selected <span style="color:var(--gold-deep)">lessons.</span></h2>
+    <p class="lead" style="margin:-8px 0 28px;color:var(--ink-soft)">The lessons are in Hebrew.</p>
     <div class="vids">
-      <button class="yt reveal" data-id="W2gohrMshJA" aria-label="ניגון הסרטון: על אכפתיות ומנהיגות">
-        <img src="https://i.ytimg.com/vi/W2gohrMshJA/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">על ״אכפתיות״ ומנהיגות</span>
+      <button class="yt reveal" data-id="W2gohrMshJA" aria-label="Play video: On caring and leadership">
+        <img src="https://i.ytimg.com/vi/W2gohrMshJA/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">On “caring” and leadership</span>
       </button>
       <div class="side">
-        <button class="yt reveal d1" data-id="jmHVbkUHxKc" aria-label="ניגון הסרטון: האחדות כמשימה">
-          <img src="https://i.ytimg.com/vi/jmHVbkUHxKc/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">״האחדות כמשימה״ – פרשת בא</span>
+        <button class="yt reveal d1" data-id="jmHVbkUHxKc" aria-label="Play video: Unity as a mission">
+          <img src="https://i.ytimg.com/vi/jmHVbkUHxKc/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">“Unity as a mission” – Parashat Bo</span>
         </button>
-        <button class="yt reveal d2" data-id="KKMKiQ-QN7Y" aria-label="ניגון הסרטון: להילחם ולנצח">
-          <img src="https://i.ytimg.com/vi/KKMKiQ-QN7Y/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">״להילחם ולנצח״ – פרשת בשלח</span>
+        <button class="yt reveal d2" data-id="KKMKiQ-QN7Y" aria-label="Play video: To fight and to win">
+          <img src="https://i.ytimg.com/vi/KKMKiQ-QN7Y/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">“To fight and to win” – Parashat Beshalach</span>
         </button>
       </div>
     </div>
     <div class="vid-more">
-      <a class="btn btn-ink-line" href="content.html">לכל השיעורים והמאמרים <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ink-line" href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener">All lessons on YouTube <svg><use href="#i-arrow"/></svg></a>
       <div class="socials">
-        <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="פייסבוק"><svg><use href="#i-fb"/></svg></a>
-        <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg><use href="#i-ig"/></svg></a>
-        <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="יוטיוב"><svg><use href="#i-yt"/></svg></a>
-        <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="טיקטוק"><svg><use href="#i-tt"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+        <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
       </div>
     </div>
   </div>
@@ -742,26 +730,26 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <section class="sec testi" aria-labelledby="t-h">
   <div class="wrap t-wrap">
     <div>
-      <p class="eyebrow" style="color:var(--gold-deep)"><b>06</b>המלצות</p>
-      <h2 id="t-h" class="h-l reveal">מה אומרים <span style="color:var(--gold-deep)">עלינו.</span></h2>
+      <p class="eyebrow" style="color:var(--gold-deep)"><b>06</b>Testimonials</p>
+      <h2 id="t-h" class="h-l reveal">What people <span style="color:var(--gold-deep)">say.</span></h2>
       <div class="t-nav">
-        <button id="tNext" aria-label="להמלצה הקודמת"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+        <button id="tNext" aria-label="Previous testimonial"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
         <span class="t-count" id="tCount" aria-live="polite">01 / 03</span>
-        <button id="tPrev" aria-label="להמלצה הבאה"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+        <button id="tPrev" aria-label="Next testimonial"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
       </div>
     </div>
     <div class="t-stage" id="tStage">
       <figure class="t-card on" style="margin:0">
-        <blockquote>הפעלנו שתי תוכניות משמעותיות של הדרכת צעירים לקראת חיי נישואין משלב הדייטים. הרב יוסף מלכה הוביל את התוכניות ביד רמה, הצליח להכין אותם לנישואין וליווה אותם גם לאחר החתונה.</blockquote>
-        <figcaption class="t-who"><b>יוסי לוי</b><span>מנכ״ל עמותת ״נצח יהודה״</span></figcaption>
+        <blockquote>We ran two significant programs guiding young people toward married life, starting from the dating stage. Rabbi Yosef Malka led them with great skill, prepared them for marriage and continued to accompany them after the wedding.</blockquote>
+        <figcaption class="t-who"><b>Yossi Levi</b><span>CEO, Netzach Yehuda Association</span></figcaption>
       </figure>
       <figure class="t-card" style="margin:0">
-        <blockquote>הרב הביא לנו תכל׳ס – כלים ותרגילים, כמו איך לברר ומה בדיוק להגיד בשידוכים. זה נתן לי המון ביטחון וסדר בראש. זה באמת מעבר לסתם שיעור – זה ארגז כלים לחיים.</blockquote>
-        <figcaption class="t-who"><b>רבקה</b><span>משתתפת בסדרת השיעורים על הבית היהודי</span></figcaption>
+        <blockquote>The Rabbi gave us the real thing – tools and exercises, like how to look into a match and exactly what to say. It gave me so much confidence and clarity. It is truly more than just a class – it is a toolbox for life.</blockquote>
+        <figcaption class="t-who"><b>Rivka</b><span>Participant in the class series on the Jewish home</span></figcaption>
       </figure>
       <figure class="t-card" style="margin:0">
-        <blockquote>יצאתי עם ארגז כלים מלא ומשמעותי. הרב עוזר להבין לעומק מהי המהות האמיתית של חתונה ושידוכים, ואיך ניגשים לתהליך בצורה נכונה.</blockquote>
-        <figcaption class="t-who"><b>שרה</b><span>משתתפת בסדרת השיעורים על הבית היהודי</span></figcaption>
+        <blockquote>I came away with a full, meaningful toolbox. The Rabbi helps you understand in depth the true essence of marriage and matchmaking, and how to approach the process the right way.</blockquote>
+        <figcaption class="t-who"><b>Sarah</b><span>Participant in the class series on the Jewish home</span></figcaption>
       </figure>
     </div>
   </div>
@@ -769,19 +757,19 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 
 <!-- 07 DONATE -->
 <section class="sec donate" id="donate" aria-labelledby="don-h">
-  <img src="assets/img/base-tent.jpg" alt="" loading="lazy">
+  <img src="../assets/img/base-tent.jpg" alt="" loading="lazy">
   <div class="wrap don-grid">
     <div>
-      <p class="eyebrow"><b>07</b>שותפים לדרך</p>
-      <h2 id="don-h" class="h-l reveal">שותפים לחיזוק <span class="gold">הדור הצעיר.</span></h2>
-      <p class="lead reveal d1">כל תרומה מגיעה ישירות לשטח – לחיילים בבסיסים, לחיילים הבודדים, לבית המדרש ולצעירים שבונים בית יהודי.</p>
-      <a class="btn btn-gold reveal d2" href="#" data-donate>לתרומה מאובטחת <svg><use href="#i-arrow"/></svg></a>
+      <p class="eyebrow"><b>07</b>Partners on the way</p>
+      <h2 id="don-h" class="h-l reveal">Partner with us to strengthen <span class="gold">the next generation.</span></h2>
+      <p class="lead reveal d1">Every donation goes straight to the field – to soldiers on their bases, to lone soldiers, to the beit midrash and to young people building a Jewish home.</p>
+      <a class="btn btn-gold reveal d2" href="#" data-donate>Donate securely <svg><use href="#i-arrow"/></svg></a>
     </div>
     <div class="don-list">
-      <div class="don-item reveal"><b>01</b><h3>יום חיזוק בבסיס</h3><p>יום חיזוק ל־50–120 לוחמים, בשיתוף ״נצח יהודה״.</p></div>
-      <div class="don-item reveal d1"><b>02</b><h3>חיבוק לחייל בודד</h3><p>דירות, סופי שבוע משותפים וליווי לכ־120 חיילים בודדים.</p></div>
-      <div class="don-item reveal d2"><b>03</b><h3>מלגות לבית המדרש</h3><p>תוכנית מלגות לבוגרי צבא הלומדים בבית המדרש.</p></div>
-      <div class="don-item reveal d3"><b>04</b><h3>זוגיות מנצחת</h3><p>סדנאות לרווקים ולזוגות – לבנות בית יציב ושמח.</p></div>
+      <div class="don-item reveal"><b>01</b><h3>A strengthening day on base</h3><p>A strengthening day for 50–120 combat soldiers, together with Netzach Yehuda.</p></div>
+      <div class="don-item reveal d1"><b>02</b><h3>A hug for a lone soldier</h3><p>Apartments, shared weekends and support for about 120 lone soldiers.</p></div>
+      <div class="don-item reveal d2"><b>03</b><h3>Beit midrash scholarships</h3><p>A scholarship program for army veterans studying in the beit midrash.</p></div>
+      <div class="don-item reveal d3"><b>04</b><h3>Winning relationships</h3><p>Workshops for singles and couples – to build a stable, happy home.</p></div>
     </div>
   </div>
 </section>
@@ -790,42 +778,42 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <section class="sec" id="contact" aria-labelledby="c-h">
   <div class="wrap contact-grid">
     <div class="c-info">
-      <p class="eyebrow" style="color:var(--gold-deep)"><b>08</b>צור קשר</p>
-      <h2 id="c-h" class="h-l reveal">נשמח <span style="color:var(--gold-deep)">לשמוע מכם.</span></h2>
-      <p class="lead reveal d1">להזמנת הרצאה, להרשמה למצפן או לכל שאלה – השאירו פרטים ונחזור אליכם בהקדם.</p>
+      <p class="eyebrow" style="color:var(--gold-deep)"><b>08</b>Contact</p>
+      <h2 id="c-h" class="h-l reveal">We’d love <span style="color:var(--gold-deep)">to hear from you.</span></h2>
+      <p class="lead reveal d1">To book a lecture, join the Matzpen, donate or ask anything – leave your details and we’ll get back to you soon.</p>
       <ul class="c-list">
-        <li><a href="https://wa.me/972527773050" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><div style="border:0;padding:0;display:block"><small>וואטסאפ</small><span dir="ltr">052-777-3050</span></div></a></li>
-        <li><a href="tel:+97226518116"><svg><use href="#i-phone"/></svg><div style="border:0;padding:0;display:block"><small>משרד</small><span dir="ltr">02-651-8116</span></div></a></li>
-        <li><a href="mailto:yosef.malka2000@gmail.com"><svg><use href="#i-mail"/></svg><div style="border:0;padding:0;display:block"><small>מייל</small><span>yosef.malka2000@gmail.com</span></div></a></li>
-        <li><div><svg><use href="#i-pin"/></svg><div style="border:0;padding:0;display:block"><small>כתובת</small><span>ברנד 5, הר נוף, ירושלים</span></div></div></li>
+        <li><a href="https://wa.me/972527773050" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><div style="border:0;padding:0;display:block"><small>WhatsApp</small><span dir="ltr">+972-52-777-3050</span></div></a></li>
+        <li><a href="tel:+97226518116"><svg><use href="#i-phone"/></svg><div style="border:0;padding:0;display:block"><small>Office</small><span dir="ltr">+972-2-651-8116</span></div></a></li>
+        <li><a href="mailto:yosef.malka2000@gmail.com"><svg><use href="#i-mail"/></svg><div style="border:0;padding:0;display:block"><small>Email</small><span>yosef.malka2000@gmail.com</span></div></a></li>
+        <li><div><svg><use href="#i-pin"/></svg><div style="border:0;padding:0;display:block"><small>Address</small><span>5 Brand St, Har Nof, Jerusalem</span></div></div></li>
       </ul>
     </div>
     <form class="cf reveal d1" id="cf" novalidate>
       <div class="f">
-        <span style="font-size:14px;color:var(--ink-soft);margin-bottom:10px" id="topic-l">במה נוכל לעזור?</span>
+        <span style="font-size:14px;color:var(--ink-soft);margin-bottom:10px" id="topic-l">How can we help?</span>
         <div class="chips" role="radiogroup" aria-labelledby="topic-l">
-          <label><input type="radio" name="topic" value="lecture" checked><span>הזמנת הרצאה / סדנה</span></label>
-          <label><input type="radio" name="topic" value="matzpen"><span>קורס המצפן</span></label>
-          <label><input type="radio" name="topic" value="donate"><span>תרומה</span></label>
-          <label><input type="radio" name="topic" value="general"><span>פנייה כללית</span></label>
+          <label><input type="radio" name="topic" value="lecture" checked><span>Book a lecture / workshop</span></label>
+          <label><input type="radio" name="topic" value="matzpen"><span>The Matzpen course</span></label>
+          <label><input type="radio" name="topic" value="donate"><span>Donation</span></label>
+          <label><input type="radio" name="topic" value="general"><span>General inquiry</span></label>
         </div>
       </div>
       <div class="f-row">
-        <div class="f"><label for="f-name">שם מלא *</label><input id="f-name" name="name" required autocomplete="name"></div>
-        <div class="f"><label for="f-phone">טלפון *</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" dir="ltr" style="text-align:right"></div>
+        <div class="f"><label for="f-name">Full name *</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="f"><label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
       </div>
       <div class="f-row">
-        <div class="f"><label for="f-mail">מייל</label><input id="f-mail" name="email" type="email" autocomplete="email" dir="ltr" style="text-align:right"></div>
-        <div class="f" id="f-extra"><label for="f-org">שם המוסד / הארגון</label><input id="f-org" name="org"></div>
+        <div class="f"><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+        <div class="f" id="f-extra"><label for="f-org">Institution / organization</label><input id="f-org" name="org"></div>
       </div>
       <div class="f" id="f-track" hidden>
-        <label for="f-trk">איזה מסלול מעניין אתכם?</label>
-        <select id="f-trk" name="track"><option>קורס פרונטלי</option><option>קורס דיגיטלי</option><option>סדנאות</option><option>עוד לא בטוח/ה</option></select>
+        <label for="f-trk">Which track interests you?</label>
+        <select id="f-trk" name="track"><option>In-person course</option><option>Digital course</option><option>Workshops</option><option>Not sure yet</option></select>
       </div>
-      <div class="f"><label for="f-msg">הודעה</label><textarea id="f-msg" name="message" rows="3"></textarea></div>
-      <label class="consent"><input type="checkbox" name="consent" required> <span>קראתי את <a href="privacy.html" target="_blank">מדיניות הפרטיות</a> ואני מאשר/ת שאופק יהודי יחזרו אליי בנוגע לפנייה.</span></label>
-      <button class="btn btn-ink" type="submit">שליחה <svg><use href="#i-arrow"/></svg></button>
-      <p class="f-ok" id="fOk" role="status">תודה! הפרטים התקבלו ונחזור אליכם בהקדם.</p>
+      <div class="f"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="3"></textarea></div>
+      <label class="consent"><input type="checkbox" name="consent" required> <span>I have read the <a href="../privacy.html" target="_blank" hreflang="he">privacy policy (Hebrew)</a> and agree that Ofek Yehudi may contact me about my inquiry.</span></label>
+      <button class="btn btn-ink" type="submit">Send <svg><use href="#i-arrow"/></svg></button>
+      <p class="f-ok" id="fOk" role="status">Thank you! We received your details and will get back to you soon.</p>
     </form>
   </div>
 </section>
@@ -835,28 +823,28 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="#top"><svg aria-hidden="true"><use href="#ofek-mark"/></svg><span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span></a>
-        <p style="max-width:320px;margin:0 0 22px">העמקת הזהות היהודית, מנהיגות והכוונה לזוגיות – לצעירים, לחיילים, לסטודנטים ולזוגות צעירים.</p>
+        <a class="logo" href="#top"><svg aria-hidden="true"><use href="#ofek-mark"/></svg><span class="logo-txt"><b>Ofek Yehudi</b><small>Young Leaders for Success</small></span></a>
+        <p style="max-width:320px;margin:0 0 22px">Deepening Jewish identity, leadership and guidance toward marriage – for young people, soldiers, students and young couples.</p>
         <div class="socials">
-          <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="פייסבוק"><svg><use href="#i-fb"/></svg></a>
-          <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg><use href="#i-ig"/></svg></a>
-          <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="יוטיוב"><svg><use href="#i-yt"/></svg></a>
-          <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="טיקטוק"><svg><use href="#i-tt"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+          <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
         </div>
       </div>
-      <div><h4><a href="leadership.html">יהדות ומנהיגות</a></h4><ul><li><a href="leadership.html#lectures">הרצאות וסדנאות</a></li><li><a href="leadership.html#programs">חיזוק בבסיסים</a></li><li><a href="leadership.html#programs">בית מדרש וחברותות</a></li><li><a href="#contact">הזמנת הרצאה</a></li></ul></div>
-      <div><h4><a href="matzpen.html">המצפן</a></h4><ul><li><a href="matzpen.html#tracks">קורס פרונטלי</a></li><li><a href="matzpen.html#tracks">קורס דיגיטלי</a></li><li><a href="matzpen.html#tracks">סדנאות</a></li></ul></div>
-      <div><h4>הארגון</h4><ul><li><a href="rabbi.html">הרב יוסף מלכה</a></li><li><a href="content.html">תוכן ושיעורים</a></li><li><a href="#donate">תרומות</a></li><li><a href="#contact">צור קשר</a></li></ul></div>
+      <div><h4><a href="#programs">Judaism &amp; Leadership</a></h4><ul><li><a href="#programs">Lectures &amp; workshops</a></li><li><a href="#programs">Strengthening on bases</a></li><li><a href="#programs">Beit midrash</a></li><li><a href="#contact">Book a lecture</a></li></ul></div>
+      <div><h4><a href="#matzpen">HaMatzpen</a></h4><ul><li><a href="#matzpen">In-person course</a></li><li><a href="#matzpen">Digital course</a></li><li><a href="#matzpen">Workshops</a></li></ul></div>
+      <div><h4>The organization</h4><ul><li><a href="#rabbi">Rabbi Yosef Malka</a></li><li><a href="#videos">Lessons</a></li><li><a href="#donate">Donate</a></li><li><a href="#contact">Contact</a></li><li><a href="../" lang="he">עברית</a></li></ul></div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 כל הזכויות שמורות לעמותת ״אופק שמחה״ (ע״ר 580452712)</span>
-      <nav aria-label="קישורים משפטיים"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a><a href="#">תקנון רכישה</a><a href="#">מדיניות תרומות</a></nav>
+      <span>© 2026 All rights reserved to the Ofek Simcha Association (Reg. No. 580452712)</span>
+      <nav aria-label="Legal links"><a href="../accessibility.html" hreflang="he">Accessibility statement (Hebrew)</a><a href="../privacy.html" hreflang="he">Privacy policy (Hebrew)</a></nav>
     </div>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/972527773050" target="_blank" rel="noopener" aria-label="שליחת הודעת וואטסאפ"><svg><use href="#i-wa"/></svg></a>
-<a class="a11y-float" href="accessibility.html" aria-label="הצהרת נגישות"><svg><use href="#i-a11y"/></svg></a>
+<a class="wa-float" href="https://wa.me/972527773050" target="_blank" rel="noopener" aria-label="Send a WhatsApp message"><svg><use href="#i-wa"/></svg></a>
+<a class="a11y-float" href="../accessibility.html" aria-label="Accessibility statement (Hebrew)"><svg><use href="#i-a11y"/></svg></a>
 
 <script>
 (()=>{
@@ -869,14 +857,14 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 
   // mobile menu
   const burger=$('#burger');
-  burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');document.body.style.overflow=o?'hidden':''});
+  burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');document.body.style.overflow=o?'hidden':''});
   $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
 
   // hero: 3D tilt follows the mouse, topic highlight, pause motion + video
   const h3=$('#top'), mqt=$('#mqToggle'), hvs=$$('.hv',h3); let vi=0; const hv=()=>hvs[vi];
   $$('.pick').forEach(p=>{const on=()=>h3.dataset.hl=p.dataset.hl, off=()=>delete h3.dataset.hl;
     p.addEventListener('mouseenter',on);p.addEventListener('focus',on);p.addEventListener('mouseleave',off);p.addEventListener('blur',off)});
-  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה ווידאו':'עצירת תנועה ווידאו';if(p)hv().pause();else hv().play().catch(()=>{})};
+  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'Play motion & video':'Pause motion & video';if(p)hv().pause();else hv().play().catch(()=>{})};
   if(reduce){hvs[0].removeAttribute('autoplay');setMq(true)}
   // crossfade: lecture to the crowd <-> rabbi speaking
   if(!reduce)setInterval(()=>{if(h3.classList.contains('paused')||document.hidden)return;const prev=hv();vi=(vi+1)%hvs.length;const nx=hv();
@@ -898,7 +886,7 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   const wf=$('#wordfx');
   if(wf){
     const gold=wf.dataset.gold.split(',');
-    wf.innerHTML=wf.textContent.trim().split(/\s+/).map(w=>`<span class="${gold.some(g=>w.replace(/[.,–]/g,'')===g.replace(/[.,]/g,''))?'g':''}">${w}</span>`).join(' ');
+    wf.innerHTML=wf.textContent.trim().split(/\s+/).map(w=>`<span class="${gold.some(g=>w.replace(/[.,–]/g,'').toLowerCase()===g.replace(/[.,]/g,'').toLowerCase())?'g':''}">${w}</span>`).join(' ');
     const spans=$$('span',wf);
     const upd=()=>{const r=wf.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35)));const n=Math.round(p*spans.length);spans.forEach((s,i)=>s.classList.toggle('on',i<n))};
     if(reduce)spans.forEach(s=>s.classList.add('on'));else{addEventListener('scroll',upd,{passive:true});upd()}
@@ -937,12 +925,12 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   $$('input[name=topic]').forEach(r=>r.addEventListener('change',syncTopic)); syncTopic();
   $$('[data-topic]').forEach(a=>a.addEventListener('click',()=>{const r=$(`input[name=topic][value=${a.dataset.topic}]`);if(r){r.checked=true;syncTopic()}}));
   $$('[data-donate]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('input[name=topic][value=donate]').checked=true;syncTopic();$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'})}));
-  $$('[data-schoolers]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('input[name=topic][value=matzpen]').checked=true;$('#f-trk').value='קורס דיגיטלי';syncTopic();$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'})}));
+  $$('[data-schoolers]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('input[name=topic][value=matzpen]').checked=true;$('#f-trk').value='Digital course';syncTopic();$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'})}));
   form.addEventListener('submit',e=>{e.preventDefault();
     const bad=$$('[required]',form).filter(i=>i.type==='checkbox'?!i.checked:!i.value.trim());
     $$('[required]',form).forEach(i=>i.setAttribute('aria-invalid',bad.includes(i)));
     if(bad.length){bad[0].focus();return}
-    // TODO: לחבר ל-Google Apps Script (גיליון ניהול פניות + התראה במייל)
+    // TODO: connect to Google Apps Script (inquiries sheet + email alert)
     form.reset();syncTopic();$('#fOk').classList.add('show');
   });
 })();

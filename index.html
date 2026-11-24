@@ -103,53 +103,14 @@ section{position:relative}
 .menu-open .burger span:nth-child(2){opacity:0}
 .menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
-/* ---------- hero (scroll story) ---------- */
-.hero{height:320vh;background:var(--navy-950);color:#fff}
-.hero-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;padding:110px var(--side) 56px}
-.hero-txt{position:relative;z-index:2;max-width:min(640px,52vw)}
-.hero .eyebrow{margin-bottom:24px}
-.hero h1{font-size:clamp(40px,5.4vw,88px);max-width:11ch}
-.hero h1 .k{color:rgba(255,255,255,.28);transition:color .6s var(--ease)}
-.hero h1 .k.on{color:#fff}
-.hero h1 .k.on.g{color:var(--gold)}
-.caps{position:relative;min-height:96px;margin:30px 0 34px;max-width:480px}
-.cap{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s var(--ease)}
-.cap.on{opacity:1;transform:none}
-.cap b{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold-soft);margin-bottom:8px;font-weight:400}
-.cap p{margin:0;color:#C9D0DF;font-weight:300;font-size:clamp(17px,1.35vw,20px);line-height:1.55}
-.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
-.prog-dots{display:flex;gap:8px;margin-top:40px}
-.prog-dots i{height:2px;width:48px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
-.prog-dots i::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(var(--f,0));transform-origin:right}
-.hero-frame{position:absolute;inset:0;z-index:0}
-.frame-in{position:absolute;inset:0;overflow:hidden;background:var(--navy-950);transform:scale(var(--sc,1.06));transform-origin:30% 40%}
-.frame-in>*{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.4s cubic-bezier(.4,0,.2,1),transform 2.2s var(--ease)}
-.frame-in>.on{opacity:1;transform:scale(1)}
-.vwrap .vbg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;filter:blur(28px) brightness(.55) saturate(.9)}
-.vwrap video{position:absolute;top:0;bottom:0;left:5%;margin:auto 0;width:58%;height:70%;object-fit:cover;object-position:38% 20%;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);mask-composite:intersect}
-.vwrap:first-child video{width:52%;height:62%}
-.frame-in::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to left,rgba(8,16,31,.94) 22%,rgba(8,16,31,.6) 48%,rgba(8,16,31,.12) 78%),linear-gradient(to top,rgba(8,16,31,.75),transparent 35%),linear-gradient(to bottom,rgba(8,16,31,.55),transparent 22%)}
+/* ---------- video pause button ---------- */
 .vid-toggle{position:absolute;inset-inline-end:calc(var(--side) + 76px);bottom:72px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(8,16,31,.6);border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 12px;font-size:12px;border-radius:40px;backdrop-filter:blur(4px)}
 .vid-toggle:hover{border-color:var(--gold)}
 .vid-toggle i{display:inline-block;width:9px;height:10px;border-inline:3px solid currentColor}
 .vid-toggle.paused i{border:0;width:0;height:0;border-block:5px solid transparent;border-inline-end:9px solid currentColor}
 .vid-toggle[hidden]{display:none}
 @media (max-width:900px){
-  .hero{height:300vh}
   .hdr,.hdr.solid{padding-block:10px}
-  .hero-stage{align-items:flex-end;padding:84px var(--gutter) 92px}
-  .hero-txt{max-width:none}
-  .frame-in::after{background:linear-gradient(to top,rgba(8,16,31,.97) 30%,rgba(8,16,31,.55) 58%,rgba(8,16,31,.15) 80%),linear-gradient(to bottom,rgba(8,16,31,.6),transparent 20%)}
-  .frame-in>img{object-position:40% 15%}
-  .vwrap video{top:64px;bottom:auto;left:0;width:100%;height:auto;aspect-ratio:3/2;object-position:center;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%);mask-image:linear-gradient(to top,transparent 0,#000 30%)}
-  .vwrap:first-child video{width:80%;left:10%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);mask-composite:intersect}
-  .vid-toggle{bottom:auto;top:calc(64px + 66.6vw - 46px);inset-inline-end:12px}
-  .hero .eyebrow{margin-bottom:12px}
-  .hero h1{font-size:clamp(30px,8.6vw,46px);max-width:none}
-  .caps{min-height:78px;margin:16px 0 18px}
-  .cap p{font-size:16px}
-  .hero-btns .btn{padding:13px 16px;font-size:15px}
-  .prog-dots{display:none}
 }
 
 
@@ -159,6 +120,11 @@ section{position:relative}
 .wordfx span{color:rgba(22,33,58,.16);transition:color .25s}
 .wordfx span.on{color:var(--ink)}
 .wordfx span.g.on{color:var(--gold-deep)}
+.pillars{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px)}
+.pillars li{border-top:2px solid var(--gold);padding-top:18px}
+.pillars b{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold-deep);margin-bottom:8px;font-weight:700}
+.pillars p{margin:0;color:var(--ink-soft);font-size:clamp(16px,1.15vw,18px)}
+@media (max-width:900px){.pillars{grid-template-columns:1fr}}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(22,33,58,.15)}
 .stat{padding:32px 0 0;padding-inline-end:24px}
 .stat+.stat{border-inline-start:1px solid rgba(22,33,58,.15);padding-inline-start:28px}
@@ -396,10 +362,80 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   .wa-float{width:52px;height:52px;bottom:16px;left:16px}
   .a11y-float{top:auto;bottom:18px;right:16px;transform:none;border:1px solid var(--line-dark);border-radius:50%;width:48px;height:48px}
 }
+/* ---------- hero v4: 3D scene (video + topic words) ---------- */
+.hero3{position:relative;overflow:hidden;isolation:isolate;background:var(--navy-950);color:#fff;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px var(--side) 72px}
+.scene{position:absolute;inset:0;z-index:0;perspective:1100px;perspective-origin:32% 50%;pointer-events:none;direction:ltr}
+.scene-front{z-index:1;will-change:transform}
+.stage{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));will-change:transform}
+.vfar{position:absolute;left:-22%;top:-18%;width:112%;height:136%;transform:translateZ(-760px);-webkit-mask-image:radial-gradient(ellipse 54% 54% at 36% 50%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse 54% 54% at 36% 50%,#000 30%,transparent 78%)}
+.vfar video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:6% 30%;filter:saturate(.55) brightness(.7) contrast(1.06) blur(1.4px);opacity:0;transition:opacity 2s ease}
+.vfar video.on{opacity:1}
+.vfar video+video{object-position:40% 12%}
+.vfar::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 40% 50%,rgba(201,164,92,.14),rgba(11,20,38,.5) 70%);mix-blend-mode:multiply}
+.mq{position:absolute;left:-25%;right:-25%;overflow:hidden;white-space:nowrap}
+.mq.r1{top:4%;transform:translateZ(-520px)}
+.mq.r3{top:64%;transform:translateZ(-520px)}
+.mq.r2{top:30%;transform:translateZ(170px)}
+.mq.r4{top:80%;transform:translateZ(170px)}
+.mq-t{display:inline-flex;animation:mq 90s linear infinite;will-change:transform}
+.mq.r2 .mq-t,.mq.r3 .mq-t{animation-direction:reverse;animation-duration:110s}
+.mq-t>div{display:inline-flex;align-items:center;direction:rtl}
+.mq span{font-weight:700;font-size:clamp(64px,9.5vw,168px);line-height:1;color:transparent;padding-inline:.18em;transition:-webkit-text-stroke-color .6s}
+.mq.back span{font-size:clamp(90px,13vw,230px)}
+.mq i{font-style:normal;font-size:clamp(20px,2.4vw,40px);padding-inline:.3em;transition:color .6s}
+.mq.t-lead span{-webkit-text-stroke:1px rgba(201,164,92,.34)}
+.mq.t-lead i{color:rgba(201,164,92,.4)}
+.mq.t-mz span{-webkit-text-stroke:1px rgba(246,241,231,.22)}
+.mq.t-mz i{color:rgba(246,241,231,.28)}
+.mq.back.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.42)}
+.mq.back.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.28)}
+.mq.front span{-webkit-text-stroke-width:2px}
+.mq.front.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.7)}
+.mq.front.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.55)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hero3.paused .mq-t{animation-play-state:paused}
+.hero3[data-hl=lead] .mq.t-lead span,.hero3[data-hl=lead] .mq.front.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.85)}
+.hero3[data-hl=lead] .mq.t-lead i{color:var(--gold)}
+.hero3[data-hl=mz] .mq.t-mz span,.hero3[data-hl=mz] .mq.front.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.75)}
+.hero3[data-hl=mz] .mq.t-mz i{color:var(--cream)}
+.hero3[data-hl=lead] .mq.t-mz span,.hero3[data-hl=mz] .mq.t-lead span,.hero3[data-hl=lead] .mq.front.t-mz span,.hero3[data-hl=mz] .mq.front.t-lead span{-webkit-text-stroke-color:rgba(255,255,255,.07)}
+.hero3::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to left,rgba(8,16,31,.96) 26%,rgba(8,16,31,.7) 46%,rgba(8,16,31,.08) 74%),linear-gradient(to top,rgba(8,16,31,.6),transparent 25%)}
+.h3-in{position:relative;z-index:2;max-width:760px}
+.h3-in .eyebrow{margin-bottom:20px}
+.hero3 h1{font-weight:700;font-size:clamp(44px,6.4vw,108px);line-height:.95;letter-spacing:-.01em;margin:0}
+.hero3 h1 .g{color:var(--gold);display:block}
+.h3-sub{margin:22px 0 40px;max-width:520px;color:#C9D0DF;font-weight:300;font-size:clamp(17px,1.35vw,21px);line-height:1.55}
+.picks{display:flex;flex-wrap:wrap;gap:16px}
+.pick{flex:1 1 300px;max-width:360px;display:flex;flex-direction:column;gap:4px;padding:22px 26px 20px;text-decoration:none;color:var(--navy-950);border-radius:4px;transition:transform .45s var(--ease),box-shadow .45s}
+.pick:hover,.pick:focus-visible{transform:translateY(-4px);box-shadow:0 26px 44px -26px rgba(0,0,0,.7)}
+.pick:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.pick small{font-size:13px;letter-spacing:.06em;opacity:.75}
+.pick b{font-size:clamp(22px,1.9vw,28px);line-height:1.15}
+.pick span{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-weight:700;font-size:15px}
+.pick svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.pick:hover svg{transform:translateX(-5px)}
+.pick-lead{background:var(--gold)}
+.pick-mz{background:var(--cream)}
+.mq-toggle{z-index:3;inset-inline-end:auto;inset-inline-start:var(--side);bottom:28px}
+@media (max-width:900px){
+  .hero3{min-height:0;padding:300px var(--gutter) 36px;align-items:flex-start}
+  .scene{perspective:700px;perspective-origin:50% 25%}
+  .vfar{left:-15%;width:130%;top:40px;height:360px;transform:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 55%,transparent 100%)}
+  .vfar video{object-position:22% 30%}
+  .mq span{font-size:clamp(48px,14vw,90px)}
+  .mq.back span{font-size:clamp(70px,20vw,130px)}
+  .mq.r1{top:60px}.mq.r2{top:150px}.mq.r3{top:46%}.mq.r4{display:none}
+  .hero3::after{background:linear-gradient(to bottom,rgba(8,16,31,0) 250px,rgba(8,16,31,.9) 310px,rgba(8,16,31,.94))}
+  .hero3 h1{font-size:clamp(36px,10vw,54px)}
+  .h3-sub{font-size:15px;margin:14px 0 22px}
+  .picks{flex-direction:column}
+  .pick{flex:none;max-width:none;padding:15px 18px}
+  .picks{gap:12px}
+  .mq-toggle{top:250px;bottom:auto;inset-inline-start:auto;inset-inline-end:var(--gutter);padding:6px 10px;font-size:11px}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
-  .hero{height:auto}.hero-stage{position:relative;height:auto;min-height:100vh}
   .wordfx span{color:var(--ink)}
 }
 </style>
@@ -452,31 +488,41 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <main id="main">
 
 <!-- HERO -->
-<section class="hero" id="top" aria-label="פתיחה">
-  <div class="hero-stage">
-    <div class="hero-txt">
-      <p class="eyebrow">ארגון אופק יהודי · ירושלים</p>
-      <h1 class="h-xl"><span class="k g on" data-k="0">ידע,</span> <span class="k g" data-k="1">ערכים</span> <span class="k g" data-k="2">וכלים</span> <span class="k" data-k="2">לחיים משמעותיים יותר.</span></h1>
-      <div class="caps" aria-live="polite">
-        <div class="cap on"><b>01 · ידע</b><p>הרצאות ושיעורים מרתקים ממקורות היהדות, עם הרב יוסף מלכה.</p></div>
-        <div class="cap"><b>02 · ערכים</b><p>מנהיגות, אחריות ואכפתיות – בבסיסים, בבית המדרש ובקהילה.</p></div>
-        <div class="cap"><b>03 · כלים לחיים</b><p>הכוונה לזוגיות יציבה ומדויקת בקורס המצפן, וסדנאות לזוגות צעירים.</p></div>
+<section class="hero3" id="top" aria-labelledby="h3-title">
+  <div class="scene" aria-hidden="true">
+    <div class="stage">
+      <div class="vfar">
+        <video class="hv on" autoplay muted loop playsinline preload="metadata" poster="assets/video/lecture-poster.jpg"><source src="assets/video/lecture.mp4" type="video/mp4"></video>
+        <video class="hv" muted loop playsinline preload="none" poster="assets/video/hero-poster.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
       </div>
-      <div class="hero-btns">
-        <a class="btn btn-gold" href="leadership.html">להזמנת הרצאות על מנהיגות <svg><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-line" href="matzpen.html">לקורס המצפן למציאת זוגיות <svg><use href="#i-arrow"/></svg></a>
-      </div>
-      <div class="prog-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-    </div>
-    <div class="hero-frame">
-      <div class="frame-in" id="frameIn">
-        <div class="vwrap on"><img class="vbg" src="assets/video/hero-poster.jpg" alt=""><video class="hv" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg" aria-hidden="true"><source src="assets/video/hero.mp4" type="video/mp4"></video></div>
-        <div class="vwrap"><img class="vbg" src="assets/video/shofar-poster.jpg" alt=""><video class="hv" muted loop playsinline preload="none" poster="assets/video/shofar-poster.jpg" aria-hidden="true"><source src="assets/video/shofar.mp4" type="video/mp4"></video></div>
-        <div class="vwrap"><img class="vbg" src="assets/video/desert-poster.jpg" alt=""><video class="hv" muted loop playsinline preload="none" poster="assets/video/desert-poster.jpg" aria-hidden="true"><source src="assets/video/desert.mp4" type="video/mp4"></video></div>
-      </div>
-      <button class="vid-toggle" id="vidToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת וידאו</span></button>
+      <div class="mq back r1 t-lead"><div class="mq-t"><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div></div></div>
+      <div class="mq back r3 t-mz"><div class="mq-t"><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div></div></div>
     </div>
   </div>
+  <div class="scene scene-front" aria-hidden="true">
+    <div class="stage">
+      <div class="mq front r2 t-mz"><div class="mq-t"><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div></div></div>
+      <div class="mq front r4 t-lead"><div class="mq-t"><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div></div></div>
+    </div>
+  </div>
+  <div class="h3-in">
+    <p class="eyebrow reveal">ארגון אופק יהודי · ירושלים</p>
+    <h1 class="reveal d1" id="h3-title">מהבסיס <span class="g">ועד החופה.</span></h1>
+    <p class="h3-sub reveal d2">הרב יוסף מלכה מלווה צעירים בשני רגעים שמעצבים חיים: כשהם לומדים להוביל, וכשהם בונים בית.</p>
+    <div class="picks reveal d3">
+      <a class="pick pick-lead" href="leadership.html" data-hl="lead">
+        <small>לבסיסים, ישיבות, מכינות וארגונים</small>
+        <b>יהדות ומנהיגות</b>
+        <span>להזמנת הרצאה <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="pick pick-mz" href="matzpen.html" data-hl="mz">
+        <small>לרווקים ורווקות</small>
+        <b>המצפן – הדרך לזוגיות</b>
+        <span>להכיר את הקורס <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+  <button class="vid-toggle mq-toggle" id="mqToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת תנועה ווידאו</span></button>
 </section>
 
 <!-- 01 RABBI -->
@@ -502,6 +548,11 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
       <p class="eyebrow"><b>02</b>אודות הארגון</p>
       <h2 id="about-h" class="sr">אודות אופק יהודי</h2>
       <p class="wordfx" id="wordfx" data-gold="הזהות,היהודית,כלים,פרקטיים,לחיים.">בחברה הישראלית יש היום חיפוש ער אחר הזהות היהודית. אופק יהודי פועל להעמיק אותה בקרב צעירים, חיילים, סטודנטים וזוגות צעירים – בשיעורים, בהרצאות מרתקות ובסדנאות עם כלים פרקטיים לחיים.</p>
+      <ul class="pillars">
+        <li class="reveal"><b>01 · ידע</b><p>הרצאות ושיעורים מרתקים ממקורות היהדות, עם הרב יוסף מלכה.</p></li>
+        <li class="reveal d1"><b>02 · ערכים</b><p>מנהיגות, אחריות ואכפתיות – בבסיסים, בבית המדרש ובקהילה.</p></li>
+        <li class="reveal d2"><b>03 · כלים לחיים</b><p>הכוונה לזוגיות יציבה ומדויקת בקורס המצפן, וסדנאות לזוגות צעירים.</p></li>
+      </ul>
     </div>
     <div class="stats">
       <div class="stat reveal"><b data-count="20">0<em>+</em></b><span>שנים של חיזוק בבסיסים צבאיים</span></div>
@@ -790,31 +841,27 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');document.body.style.overflow=o?'hidden':''});
   $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
 
-  // hero video
-  const vids=$$('.hv'), vt=$('#vidToggle'); let v=vids[0];
-  const setPaused=p=>{vt.classList.toggle('paused',p);vt.setAttribute('aria-pressed',p);$('span',vt).textContent=p?'הפעלת וידאו':'עצירת וידאו'};
-  if(reduce){vids.forEach(x=>{x.removeAttribute('autoplay');x.pause()});setPaused(true)}
-  vt.addEventListener('click',()=>{if(v.paused){v.play();setPaused(false)}else{v.pause();setPaused(true)}});
-
-  // hero scroll story: 3 chapters
-  const hero=$('#top'), frame=$('#frameIn'), media=[...frame.children], caps=$$('.cap'), ks=$$('.hero h1 .k'), dots=$$('.prog-dots i');
-  let cur=-1;
-  const setChap=i=>{if(i===cur)return;cur=i;
-    media.forEach((m,k)=>m.classList.toggle('on',k===i));caps.forEach((c,k)=>c.classList.toggle('on',k===i));
-    ks.forEach(k=>k.classList.toggle('on',+k.dataset.k<=i));
-    vids.forEach((x,k)=>{if(k!==i)setTimeout(()=>{if(cur!==k)x.pause()},1500)});v=vids[i];
-    if(!vt.classList.contains('paused'))v.play().catch(()=>{});};
-  const story=()=>{const r=hero.getBoundingClientRect(),len=r.height-innerHeight;const p=Math.min(1,Math.max(0,-r.top/len));
-    setChap(Math.min(2,Math.floor(p*3)));
-    dots.forEach((d,k)=>d.style.setProperty('--f',Math.min(1,Math.max(0,p*3-k)).toFixed(3)));
-    if(!reduce)frame.style.setProperty('--sc',(1.06-p*.06).toFixed(4))};
-  addEventListener('scroll',story,{passive:true});addEventListener('resize',story);story();
-  $$('.hero .k').forEach(()=>{});
-  ks.forEach(k=>k.addEventListener('click',()=>{const i=+k.dataset.k;scrollTo({top:hero.offsetTop+(hero.offsetHeight-innerHeight)*(i/3+.05),behavior:reduce?'auto':'smooth'})}));
+  // hero: 3D tilt follows the mouse, topic highlight, pause motion + video
+  const h3=$('#top'), mqt=$('#mqToggle'), hvs=$$('.hv',h3); let vi=0; const hv=()=>hvs[vi];
+  $$('.pick').forEach(p=>{const on=()=>h3.dataset.hl=p.dataset.hl, off=()=>delete h3.dataset.hl;
+    p.addEventListener('mouseenter',on);p.addEventListener('focus',on);p.addEventListener('mouseleave',off);p.addEventListener('blur',off)});
+  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה ווידאו':'עצירת תנועה ווידאו';if(p)hv().pause();else hv().play().catch(()=>{})};
+  if(reduce){hvs[0].removeAttribute('autoplay');setMq(true)}
+  // crossfade: lecture to the crowd <-> rabbi speaking
+  if(!reduce)setInterval(()=>{if(h3.classList.contains('paused')||document.hidden)return;const prev=hv();vi=(vi+1)%hvs.length;const nx=hv();
+    nx.play().catch(()=>{});nx.classList.add('on');prev.classList.remove('on');setTimeout(()=>{if(prev!==hv())prev.pause()},2100)},9000);
+  mqt.addEventListener('click',()=>setMq(!h3.classList.contains('paused')));
+  if(!reduce&&matchMedia('(hover:hover)').matches){
+    let tx=0,ty=0,cx=0,cy=0,raf=0;
+    const tick=()=>{cx+=(tx-cx)*.06;cy+=(ty-cy)*.06;h3.style.setProperty('--ry',(cx*7).toFixed(2)+'deg');h3.style.setProperty('--rx',(-cy*5).toFixed(2)+'deg');
+      raf=(Math.abs(tx-cx)+Math.abs(ty-cy)>.001)?requestAnimationFrame(tick):0};
+    h3.addEventListener('mousemove',e=>{const r=h3.getBoundingClientRect();tx=(e.clientX-r.left)/r.width*2-1;ty=(e.clientY-r.top)/r.height*2-1;if(!raf)raf=requestAnimationFrame(tick)});
+    h3.addEventListener('mouseleave',()=>{tx=0;ty=0;if(!raf)raf=requestAnimationFrame(tick)});
+  }
 
   // reveal
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
-  $$('.reveal').forEach(el=>el.closest('.hero')?requestAnimationFrame(()=>el.classList.add('in')):io.observe(el));
+  $$('.reveal').forEach(el=>el.closest('.hero3')?requestAnimationFrame(()=>el.classList.add('in')):io.observe(el));
 
   // word-by-word reveal
   const wf=$('#wordfx');
