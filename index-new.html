@@ -397,28 +397,43 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   .wa-float{width:52px;height:52px;bottom:16px;left:16px}
   .a11y-float{top:auto;bottom:18px;right:16px;transform:none;border:1px solid var(--line-dark);border-radius:50%;width:48px;height:48px}
 }
-/* ---------- hero v3: topics behind, two picks ---------- */
+/* ---------- hero v4: 3D scene (video + topic words) ---------- */
 .hero3{position:relative;overflow:hidden;isolation:isolate;background:var(--navy-950);color:#fff;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px var(--side) 72px}
-.topics{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;justify-content:space-evenly;padding-block:70px 20px;direction:ltr;pointer-events:none}
-.mq{overflow:hidden;white-space:nowrap}
+.scene{position:absolute;inset:0;z-index:0;perspective:1100px;perspective-origin:32% 50%;pointer-events:none;direction:ltr}
+.scene-front{z-index:1;will-change:transform}
+.stage{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));will-change:transform}
+.vplane{position:absolute;left:5%;width:50%;top:17%;height:66%;transform:translateZ(0) rotateY(16deg);transform-origin:0 50%;border-radius:6px;overflow:hidden;box-shadow:0 60px 120px -40px rgba(0,0,0,.9),0 0 0 1px rgba(201,164,92,.35)}
+.vplane img,.vplane video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.vplane::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,31,.55),transparent 40%),linear-gradient(to left,rgba(8,16,31,.5),transparent 35%)}
+.mq{position:absolute;left:-25%;right:-25%;overflow:hidden;white-space:nowrap}
+.mq.r1{top:4%;transform:translateZ(-520px)}
+.mq.r3{top:64%;transform:translateZ(-520px)}
+.mq.r2{top:30%;transform:translateZ(170px)}
+.mq.r4{top:80%;transform:translateZ(170px)}
 .mq-t{display:inline-flex;animation:mq 90s linear infinite;will-change:transform}
-.mq:nth-child(even) .mq-t{animation-direction:reverse;animation-duration:110s}
+.mq.r2 .mq-t,.mq.r3 .mq-t{animation-direction:reverse;animation-duration:110s}
 .mq-t>div{display:inline-flex;align-items:center;direction:rtl}
-.mq span{font-weight:700;font-size:clamp(64px,9.5vw,168px);line-height:1;color:transparent;padding-inline:.18em;transition:-webkit-text-stroke-color .6s,color .6s}
+.mq span{font-weight:700;font-size:clamp(64px,9.5vw,168px);line-height:1;color:transparent;padding-inline:.18em;transition:-webkit-text-stroke-color .6s}
+.mq.back span{font-size:clamp(90px,13vw,230px)}
 .mq i{font-style:normal;font-size:clamp(20px,2.4vw,40px);padding-inline:.3em;transition:color .6s}
 .mq.t-lead span{-webkit-text-stroke:1px rgba(201,164,92,.34)}
 .mq.t-lead i{color:rgba(201,164,92,.4)}
-.mq.t-mz span{-webkit-text-stroke:1px rgba(246,241,231,.2)}
-.mq.t-mz i{color:rgba(246,241,231,.26)}
+.mq.t-mz span{-webkit-text-stroke:1px rgba(246,241,231,.22)}
+.mq.t-mz i{color:rgba(246,241,231,.28)}
+.mq.back.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.42)}
+.mq.back.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.28)}
+.mq.front span{-webkit-text-stroke-width:2px}
+.mq.front.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.7)}
+.mq.front.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.55)}
 @keyframes mq{to{transform:translateX(-50%)}}
 .hero3.paused .mq-t{animation-play-state:paused}
-.hero3[data-hl=lead] .mq.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.7)}
+.hero3[data-hl=lead] .mq.t-lead span,.hero3[data-hl=lead] .mq.front.t-lead span{-webkit-text-stroke-color:rgba(201,164,92,.85)}
 .hero3[data-hl=lead] .mq.t-lead i{color:var(--gold)}
-.hero3[data-hl=mz] .mq.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.6)}
+.hero3[data-hl=mz] .mq.t-mz span,.hero3[data-hl=mz] .mq.front.t-mz span{-webkit-text-stroke-color:rgba(246,241,231,.75)}
 .hero3[data-hl=mz] .mq.t-mz i{color:var(--cream)}
-.hero3[data-hl] .mq:not(.t-lead):not(.t-mz),.hero3[data-hl=lead] .mq.t-mz span,.hero3[data-hl=mz] .mq.t-lead span{-webkit-text-stroke-color:rgba(255,255,255,.06)}
-.hero3::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(60% 75% at 72% 52%,rgba(8,16,31,.94) 0%,rgba(8,16,31,.72) 45%,rgba(8,16,31,0) 80%)}
-.h3-in{position:relative;z-index:1;max-width:760px}
+.hero3[data-hl=lead] .mq.t-mz span,.hero3[data-hl=mz] .mq.t-lead span,.hero3[data-hl=lead] .mq.front.t-mz span,.hero3[data-hl=mz] .mq.front.t-lead span{-webkit-text-stroke-color:rgba(255,255,255,.07)}
+.hero3::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to left,rgba(8,16,31,.96) 26%,rgba(8,16,31,.7) 46%,rgba(8,16,31,.08) 74%),linear-gradient(to top,rgba(8,16,31,.6),transparent 25%)}
+.h3-in{position:relative;z-index:2;max-width:760px}
 .h3-in .eyebrow{margin-bottom:20px}
 .hero3 h1{font-weight:700;font-size:clamp(44px,6.4vw,108px);line-height:.95;letter-spacing:-.01em;margin:0}
 .hero3 h1 .g{color:var(--gold);display:block}
@@ -434,16 +449,21 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 .pick:hover svg{transform:translateX(-5px)}
 .pick-lead{background:var(--gold)}
 .pick-mz{background:var(--cream)}
-.mq-toggle{z-index:2;inset-inline-end:auto;inset-inline-start:var(--side);bottom:28px}
+.mq-toggle{z-index:3;inset-inline-end:auto;inset-inline-start:var(--side);bottom:28px}
 @media (max-width:900px){
-  .hero3{padding:104px var(--gutter) 84px;align-items:flex-end}
-  .hero3::after{background:linear-gradient(to top,rgba(8,16,31,.96) 35%,rgba(8,16,31,.6) 70%,rgba(8,16,31,.3))}
-  .mq span{font-size:clamp(52px,15vw,96px)}
-  .hero3 h1{font-size:clamp(40px,11vw,60px)}
-  .h3-sub{font-size:16px;margin:16px 0 28px}
+  .hero3{min-height:0;padding:300px var(--gutter) 36px;align-items:flex-start}
+  .scene{perspective:700px;perspective-origin:50% 25%}
+  .vplane{left:6%;width:88%;top:80px;height:200px;transform:rotateX(9deg);transform-origin:50% 0}
+  .mq span{font-size:clamp(48px,14vw,90px)}
+  .mq.back span{font-size:clamp(70px,20vw,130px)}
+  .mq.r1{top:60px}.mq.r2{top:150px}.mq.r3{top:46%}.mq.r4{display:none}
+  .hero3::after{background:linear-gradient(to bottom,rgba(8,16,31,0) 250px,rgba(8,16,31,.9) 310px,rgba(8,16,31,.94))}
+  .hero3 h1{font-size:clamp(36px,10vw,54px)}
+  .h3-sub{font-size:15px;margin:14px 0 22px}
   .picks{flex-direction:column}
-  .pick{flex:none;max-width:none;padding:18px 20px}
-  .mq-toggle{top:84px;bottom:auto;inset-inline-start:var(--gutter)}
+  .pick{flex:none;max-width:none;padding:15px 18px}
+  .picks{gap:12px}
+  .mq-toggle{top:236px;bottom:auto;inset-inline-start:auto;inset-inline-end:calc(6% + 10px);padding:6px 10px;font-size:11px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
@@ -502,11 +522,21 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 
 <!-- HERO -->
 <section class="hero3" id="top" aria-labelledby="h3-title">
-  <div class="topics" aria-hidden="true">
-      <div class="mq t-lead"><div class="mq-t"><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div></div></div>
-      <div class="mq t-mz"><div class="mq-t"><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div></div></div>
-      <div class="mq t-lead"><div class="mq-t"><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div></div></div>
-      <div class="mq t-mz"><div class="mq-t"><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div></div></div>
+  <div class="scene" aria-hidden="true">
+    <div class="stage">
+      <div class="mq back r1 t-lead"><div class="mq-t"><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div></div></div>
+      <div class="mq back r3 t-mz"><div class="mq-t"><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div></div></div>
+      <div class="vplane">
+        <img src="assets/video/hero-poster.jpg" alt="">
+        <video class="hv" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+  </div>
+  <div class="scene scene-front" aria-hidden="true">
+    <div class="stage">
+      <div class="mq front r2 t-mz"><div class="mq-t"><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div><div><span>זוגיות</span><i>✦</i><span>המצפן</span><i>✦</i><span>בניית בית</span><i>✦</i><span>הקשבה</span><i>✦</i><span>בחירה נכונה</span><i>✦</i></div></div></div>
+      <div class="mq front r4 t-lead"><div class="mq-t"><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div><div><span>בית מדרש</span><i>✦</i><span>פרשת השבוע</span><i>✦</i><span>הרצאות</span><i>✦</i><span>ימי עיון</span><i>✦</i><span>מכינות</span><i>✦</i></div></div></div>
+    </div>
   </div>
   <div class="h3-in">
     <p class="eyebrow reveal">ארגון אופק יהודי · ירושלים</p>
@@ -525,7 +555,7 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
       </a>
     </div>
   </div>
-  <button class="vid-toggle mq-toggle" id="mqToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת תנועה</span></button>
+  <button class="vid-toggle mq-toggle" id="mqToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת תנועה ווידאו</span></button>
 </section>
 
 <!-- 01 RABBI -->
@@ -839,13 +869,20 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');document.body.style.overflow=o?'hidden':''});
   $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
 
-  // hero: highlight topics for the hovered pick, pause motion
-  const h3=$('#top'), mqt=$('#mqToggle');
+  // hero: 3D tilt follows the mouse, topic highlight, pause motion + video
+  const h3=$('#top'), mqt=$('#mqToggle'), hv=$('.hv',h3);
   $$('.pick').forEach(p=>{const on=()=>h3.dataset.hl=p.dataset.hl, off=()=>delete h3.dataset.hl;
     p.addEventListener('mouseenter',on);p.addEventListener('focus',on);p.addEventListener('mouseleave',off);p.addEventListener('blur',off)});
-  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה':'עצירת תנועה'};
-  if(reduce)setMq(true);
+  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה ווידאו':'עצירת תנועה ווידאו';if(p)hv.pause();else hv.play().catch(()=>{})};
+  if(reduce){hv.removeAttribute('autoplay');setMq(true)}
   mqt.addEventListener('click',()=>setMq(!h3.classList.contains('paused')));
+  if(!reduce&&matchMedia('(hover:hover)').matches){
+    let tx=0,ty=0,cx=0,cy=0,raf=0;
+    const tick=()=>{cx+=(tx-cx)*.06;cy+=(ty-cy)*.06;h3.style.setProperty('--ry',(cx*7).toFixed(2)+'deg');h3.style.setProperty('--rx',(-cy*5).toFixed(2)+'deg');
+      raf=(Math.abs(tx-cx)+Math.abs(ty-cy)>.001)?requestAnimationFrame(tick):0};
+    h3.addEventListener('mousemove',e=>{const r=h3.getBoundingClientRect();tx=(e.clientX-r.left)/r.width*2-1;ty=(e.clientY-r.top)/r.height*2-1;if(!raf)raf=requestAnimationFrame(tick)});
+    h3.addEventListener('mouseleave',()=>{tx=0;ty=0;if(!raf)raf=requestAnimationFrame(tick)});
+  }
 
   // reveal
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
