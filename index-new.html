@@ -402,9 +402,11 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 .scene{position:absolute;inset:0;z-index:0;perspective:1100px;perspective-origin:32% 50%;pointer-events:none;direction:ltr}
 .scene-front{z-index:1;will-change:transform}
 .stage{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));will-change:transform}
-.vplane{position:absolute;left:5%;width:50%;top:17%;height:66%;transform:translateZ(0) rotateY(16deg);transform-origin:0 50%;border-radius:6px;overflow:hidden;box-shadow:0 60px 120px -40px rgba(0,0,0,.9),0 0 0 1px rgba(201,164,92,.35)}
-.vplane img,.vplane video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
-.vplane::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,31,.55),transparent 40%),linear-gradient(to left,rgba(8,16,31,.5),transparent 35%)}
+.vfar{position:absolute;left:-22%;top:-18%;width:112%;height:136%;transform:translateZ(-760px);-webkit-mask-image:radial-gradient(ellipse 54% 54% at 36% 50%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse 54% 54% at 36% 50%,#000 30%,transparent 78%)}
+.vfar video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:6% 30%;filter:saturate(.55) brightness(.7) contrast(1.06) blur(1.4px);opacity:0;transition:opacity 2s ease}
+.vfar video.on{opacity:1}
+.vfar video+video{object-position:40% 12%}
+.vfar::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 40% 50%,rgba(201,164,92,.14),rgba(11,20,38,.5) 70%);mix-blend-mode:multiply}
 .mq{position:absolute;left:-25%;right:-25%;overflow:hidden;white-space:nowrap}
 .mq.r1{top:4%;transform:translateZ(-520px)}
 .mq.r3{top:64%;transform:translateZ(-520px)}
@@ -453,7 +455,8 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 @media (max-width:900px){
   .hero3{min-height:0;padding:300px var(--gutter) 36px;align-items:flex-start}
   .scene{perspective:700px;perspective-origin:50% 25%}
-  .vplane{left:6%;width:88%;top:80px;height:200px;transform:rotateX(9deg);transform-origin:50% 0}
+  .vfar{left:-15%;width:130%;top:40px;height:360px;transform:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 18%,#000 55%,transparent 100%)}
+  .vfar video{object-position:22% 30%}
   .mq span{font-size:clamp(48px,14vw,90px)}
   .mq.back span{font-size:clamp(70px,20vw,130px)}
   .mq.r1{top:60px}.mq.r2{top:150px}.mq.r3{top:46%}.mq.r4{display:none}
@@ -463,7 +466,7 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   .picks{flex-direction:column}
   .pick{flex:none;max-width:none;padding:15px 18px}
   .picks{gap:12px}
-  .mq-toggle{top:236px;bottom:auto;inset-inline-start:auto;inset-inline-end:calc(6% + 10px);padding:6px 10px;font-size:11px}
+  .mq-toggle{top:250px;bottom:auto;inset-inline-start:auto;inset-inline-end:var(--gutter);padding:6px 10px;font-size:11px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
@@ -524,12 +527,12 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
 <section class="hero3" id="top" aria-labelledby="h3-title">
   <div class="scene" aria-hidden="true">
     <div class="stage">
+      <div class="vfar">
+        <video class="hv on" autoplay muted loop playsinline preload="metadata" poster="assets/video/lecture-poster.jpg"><source src="assets/video/lecture.mp4" type="video/mp4"></video>
+        <video class="hv" muted loop playsinline preload="none" poster="assets/video/hero-poster.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+      </div>
       <div class="mq back r1 t-lead"><div class="mq-t"><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div><div><span>מנהיגות</span><i>✦</i><span>זהות יהודית</span><i>✦</i><span>אחריות</span><i>✦</i><span>ערבות הדדית</span><i>✦</i><span>חיזוק בבסיסים</span><i>✦</i></div></div></div>
       <div class="mq back r3 t-mz"><div class="mq-t"><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div><div><span>חופה</span><i>✦</i><span>שלום בית</span><i>✦</i><span>זוגות צעירים</span><i>✦</i><span>אמונה</span><i>✦</i><span>צמיחה</span><i>✦</i></div></div></div>
-      <div class="vplane">
-        <img src="assets/video/hero-poster.jpg" alt="">
-        <video class="hv" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
-      </div>
     </div>
   </div>
   <div class="scene scene-front" aria-hidden="true">
@@ -870,11 +873,14 @@ form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33
   $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
 
   // hero: 3D tilt follows the mouse, topic highlight, pause motion + video
-  const h3=$('#top'), mqt=$('#mqToggle'), hv=$('.hv',h3);
+  const h3=$('#top'), mqt=$('#mqToggle'), hvs=$$('.hv',h3); let vi=0; const hv=()=>hvs[vi];
   $$('.pick').forEach(p=>{const on=()=>h3.dataset.hl=p.dataset.hl, off=()=>delete h3.dataset.hl;
     p.addEventListener('mouseenter',on);p.addEventListener('focus',on);p.addEventListener('mouseleave',off);p.addEventListener('blur',off)});
-  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה ווידאו':'עצירת תנועה ווידאו';if(p)hv.pause();else hv.play().catch(()=>{})};
-  if(reduce){hv.removeAttribute('autoplay');setMq(true)}
+  const setMq=p=>{h3.classList.toggle('paused',p);mqt.classList.toggle('paused',p);mqt.setAttribute('aria-pressed',p);$('span',mqt).textContent=p?'הפעלת תנועה ווידאו':'עצירת תנועה ווידאו';if(p)hv().pause();else hv().play().catch(()=>{})};
+  if(reduce){hvs[0].removeAttribute('autoplay');setMq(true)}
+  // crossfade: lecture to the crowd <-> rabbi speaking
+  if(!reduce)setInterval(()=>{if(h3.classList.contains('paused')||document.hidden)return;const prev=hv();vi=(vi+1)%hvs.length;const nx=hv();
+    nx.play().catch(()=>{});nx.classList.add('on');prev.classList.remove('on');setTimeout(()=>{if(prev!==hv())prev.pause()},2100)},9000);
   mqt.addEventListener('click',()=>setMq(!h3.classList.contains('paused')));
   if(!reduce&&matchMedia('(hover:hover)').matches){
     let tx=0,ty=0,cx=0,cy=0,raf=0;
