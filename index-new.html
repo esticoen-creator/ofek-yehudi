@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אופק יהודי | הרב יוסף מלכה – הרצאות, מנהיגות והכוונה לזוגיות</title>
+<meta name="description" content="ארגון אופק יהודי בראשות הרב יוסף מלכה: הרצאות וסדנאות ביהדות ומנהיגות לצעירים, חיילים וסטודנטים, וקורס המצפן – הדרך למציאת זוגיות יציבה ומדויקת.">
+<meta property="og:title" content="אופק יהודי | הרב יוסף מלכה">
+<meta property="og:description" content="ידע, ערכים וכלים לחיים משמעותיים יותר. הרצאות, מנהיגות והכוונה לזוגיות.">
+<meta property="og:image" content="assets/img/rabbi-portrait.jpg">
+<meta property="og:locale" content="he_IL">
+<link rel="alternate" hreflang="en" href="en/">
+<meta name="theme-color" content="#0B1426">
+<link rel="preload" href="fonts/TelAviv-BrutalistBold.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistLight.ttf") format("truetype");font-weight:300;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistRegular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Tel Aviv";src:url("fonts/TelAviv-BrutalistBold.ttf") format("truetype");font-weight:700;font-display:swap}
+
+:root{
+  --navy-950:#08101F;
+  --navy-900:#0B1426;
+  --navy-800:#111E38;
+  --navy-700:#1A2B4D;
+  --line-dark:rgba(226,201,143,.18);
+  --gold:#C9A45C;
+  --gold-soft:#E2C98F;
+  --gold-deep:#9C7A3C;
+  --cream:#F6F1E7;
+  --cream-2:#EDE4D3;
+  --ink:#16213A;
+  --ink-soft:#4A5470;
+  --white:#fff;
+  --sky:#2BB3E3;
+  --wa:#25D366;
+  --max:1520px;
+  --gutter:clamp(16px,4vw,56px);
+  --side:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)));
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Tel Aviv",system-ui,sans-serif;font-weight:400;background:var(--cream);color:var(--ink);line-height:1.6;font-size:clamp(16px,1.05vw,18px);overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.skip{position:fixed;inset-inline-start:12px;top:12px;z-index:200;background:var(--gold);color:var(--navy-950);padding:10px 16px;text-decoration:none;font-weight:700;transform:translateY(-200%)}
+.skip:focus{transform:none}
+html,body{overflow-x:clip}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- shared ---------- */
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.18em;color:var(--gold);font-weight:400;margin:0 0 28px}
+.eyebrow b{font-weight:700;font-size:15px;letter-spacing:0}
+.eyebrow::after{content:"";height:1px;width:56px;background:currentColor;opacity:.6}
+.h-xl{font-weight:700;font-size:clamp(40px,7vw,104px);line-height:.98;letter-spacing:-.01em;margin:0}
+.h-l{font-weight:700;font-size:clamp(32px,4.4vw,64px);line-height:1.05;margin:0}
+.h-m{font-weight:700;font-size:clamp(22px,2.2vw,30px);line-height:1.2;margin:0}
+.lead{font-weight:300;font-size:clamp(18px,1.5vw,22px);line-height:1.6}
+.gold{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border:1px solid transparent;text-decoration:none;font-weight:700;font-size:16px;line-height:1;transition:background .3s,color .3s,border-color .3s,transform .3s var(--ease);white-space:nowrap}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(-4px)}
+.btn-gold{background:var(--gold);color:var(--navy-950)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-line{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-soft)}
+.btn-ink{background:var(--navy-900);color:#fff}
+.btn-ink:hover{background:var(--navy-700)}
+.btn-ink-line{border-color:var(--ink);color:var(--ink)}
+.btn-ink-line:hover{background:var(--ink);color:#fff}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+section{position:relative}
+.sec{padding-block:clamp(88px,12vw,168px)}
+.dark{background:var(--navy-900);color:#E9EDF5}
+.dark .lead{color:#B9C2D6}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset-inline:0;top:0;z-index:100;transition:background .4s,box-shadow .4s,padding .4s;padding-block:22px}
+.hdr.solid{background:rgba(8,16,31,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-block:12px;box-shadow:0 1px 0 var(--line-dark)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;flex-shrink:0}
+.logo svg{width:38px;height:42px}
+.logo-txt{display:flex;flex-direction:column;line-height:1}
+.logo-txt b{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.logo-txt small{font-size:11px;letter-spacing:.12em;color:var(--gold-soft);margin-top:5px;font-weight:300}
+.nav{display:flex;align-items:center;gap:clamp(16px,2vw,32px)}
+.nav a{text-decoration:none;color:#fff;font-size:15px;position:relative;padding-block:6px}
+.nav a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s var(--ease);transform-origin:right}
+.nav a:hover::after{transform:scaleX(1)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.lang{color:#fff;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,.3);padding:7px 10px;line-height:1;letter-spacing:.05em}
+.lang:hover{border-color:var(--gold);color:var(--gold-soft)}
+.hdr .btn{padding:12px 20px;font-size:15px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;color:#fff}
+.burger span{position:absolute;inset-inline:10px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- hero (scroll story) ---------- */
+.hero{height:320vh;background:var(--navy-950);color:#fff}
+.hero-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;padding:110px var(--side) 56px}
+.hero-txt{position:relative;z-index:2;max-width:min(640px,52vw)}
+.hero .eyebrow{margin-bottom:24px}
+.hero h1{font-size:clamp(40px,5.4vw,88px);max-width:11ch}
+.hero h1 .k{color:rgba(255,255,255,.28);transition:color .6s var(--ease)}
+.hero h1 .k.on{color:#fff}
+.hero h1 .k.on.g{color:var(--gold)}
+.caps{position:relative;min-height:96px;margin:30px 0 34px;max-width:480px}
+.cap{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s var(--ease)}
+.cap.on{opacity:1;transform:none}
+.cap b{display:block;font-size:13px;letter-spacing:.16em;color:var(--gold-soft);margin-bottom:8px;font-weight:400}
+.cap p{margin:0;color:#C9D0DF;font-weight:300;font-size:clamp(17px,1.35vw,20px);line-height:1.55}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.prog-dots{display:flex;gap:8px;margin-top:40px}
+.prog-dots i{height:2px;width:48px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.prog-dots i::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(var(--f,0));transform-origin:right}
+.hero-frame{position:absolute;inset:0;z-index:0}
+.frame-in{position:absolute;inset:0;overflow:hidden;background:var(--navy-950);transform:scale(var(--sc,1.06));transform-origin:30% 40%}
+.frame-in>*{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.4s cubic-bezier(.4,0,.2,1),transform 2.2s var(--ease)}
+.frame-in>.on{opacity:1;transform:scale(1)}
+.vwrap .vbg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;filter:blur(28px) brightness(.55) saturate(.9)}
+.vwrap video{position:absolute;top:0;bottom:0;left:5%;margin:auto 0;width:58%;height:70%;object-fit:cover;object-position:38% 20%;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 12%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);mask-composite:intersect}
+.vwrap:first-child video{width:52%;height:62%}
+.frame-in::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to left,rgba(8,16,31,.94) 22%,rgba(8,16,31,.6) 48%,rgba(8,16,31,.12) 78%),linear-gradient(to top,rgba(8,16,31,.75),transparent 35%),linear-gradient(to bottom,rgba(8,16,31,.55),transparent 22%)}
+.vid-toggle{position:absolute;inset-inline-end:calc(var(--side) + 76px);bottom:72px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(8,16,31,.6);border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 12px;font-size:12px;border-radius:40px;backdrop-filter:blur(4px)}
+.vid-toggle:hover{border-color:var(--gold)}
+.vid-toggle i{display:inline-block;width:9px;height:10px;border-inline:3px solid currentColor}
+.vid-toggle.paused i{border:0;width:0;height:0;border-block:5px solid transparent;border-inline-end:9px solid currentColor}
+.vid-toggle[hidden]{display:none}
+@media (max-width:900px){
+  .hero{height:300vh}
+  .hdr,.hdr.solid{padding-block:10px}
+  .hero-stage{align-items:flex-end;padding:84px var(--gutter) 92px}
+  .hero-txt{max-width:none}
+  .frame-in::after{background:linear-gradient(to top,rgba(8,16,31,.97) 30%,rgba(8,16,31,.55) 58%,rgba(8,16,31,.15) 80%),linear-gradient(to bottom,rgba(8,16,31,.6),transparent 20%)}
+  .frame-in>img{object-position:40% 15%}
+  .vwrap video{top:64px;bottom:auto;left:0;width:100%;height:auto;aspect-ratio:3/2;object-position:center;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%);mask-image:linear-gradient(to top,transparent 0,#000 30%)}
+  .vwrap:first-child video{width:80%;left:10%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to top,transparent 0,#000 30%),linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);mask-composite:intersect}
+  .vid-toggle{bottom:auto;top:calc(64px + 66.6vw - 46px);inset-inline-end:12px}
+  .hero .eyebrow{margin-bottom:12px}
+  .hero h1{font-size:clamp(30px,8.6vw,46px);max-width:none}
+  .caps{min-height:78px;margin:16px 0 18px}
+  .cap p{font-size:16px}
+  .hero-btns .btn{padding:13px 16px;font-size:15px}
+  .prog-dots{display:none}
+}
+
+
+/* ---------- 01 about ---------- */
+.about-grid{display:grid;grid-template-columns:1fr;gap:56px}
+.wordfx{font-weight:400;font-size:clamp(26px,3.4vw,50px);line-height:1.28;margin:0;color:var(--ink)}
+.wordfx span{color:rgba(22,33,58,.16);transition:color .25s}
+.wordfx span.on{color:var(--ink)}
+.wordfx span.g.on{color:var(--gold-deep)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(22,33,58,.15)}
+.stat{padding:32px 0 0;padding-inline-end:24px}
+.stat+.stat{border-inline-start:1px solid rgba(22,33,58,.15);padding-inline-start:28px}
+.stat b{display:block;font-size:clamp(40px,5vw,72px);font-weight:700;line-height:1;color:var(--navy-900)}
+.stat b em{font-style:normal;color:var(--gold-deep)}
+.stat span{display:block;margin-top:10px;color:var(--ink-soft);font-size:15px}
+.about-img{position:relative;aspect-ratio:21/9;overflow:hidden}
+.about-img img{width:100%;height:118%;object-fit:cover;object-position:center 35%;will-change:transform}
+.about-img figcaption{position:absolute;inset-inline-start:20px;bottom:18px;color:#fff;font-size:13px;letter-spacing:.08em;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+
+/* ---------- 02 two worlds ---------- */
+.worlds{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px);margin-top:56px}
+.world{position:relative;min-height:600px;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(28px,3.5vw,52px);text-decoration:none;overflow:hidden;isolation:isolate}
+.world-a{color:#fff;background:var(--navy-800)}
+.world-a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--ease);opacity:.8}
+.world-a::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(8,16,31,.96) 10%,rgba(8,16,31,.35) 70%,rgba(8,16,31,.2))}
+.world:hover img{transform:scale(1.06)}
+.world-b{background:linear-gradient(160deg,#FBF7EF 0%,#EFE3C8 100%);color:var(--ink);border:1px solid rgba(156,122,60,.25)}
+.world-b .mz-logo{width:min(44%,230px);margin:0 auto auto;padding-bottom:24px;mix-blend-mode:multiply;transition:transform 1.4s var(--ease)}
+.world-b:hover .mz-logo{transform:scale(1.04)}
+.world-tag{font-size:13px;letter-spacing:.16em;margin-bottom:16px;display:block}
+.world-a .world-tag{color:var(--gold-soft)}
+.world-b .world-tag{color:var(--gold-deep)}
+.world p{margin:16px 0 28px;max-width:440px;font-weight:300}
+.world-a p{color:#D3DAE8}
+.world-b p{color:var(--ink-soft)}
+.world .more{display:inline-flex;align-items:center;gap:10px;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:4px;align-self:flex-start}
+.world-a .more{color:var(--gold-soft)}
+.world-b .more{color:var(--navy-900)}
+.world .more svg{width:15px;transition:transform .3s var(--ease)}
+.world:hover .more svg{transform:translateX(-5px)}
+
+/* ---------- 03 rabbi ---------- */
+.rabbi{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.rabbi-img{position:relative}
+.rabbi-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%}
+.rabbi-img::after{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid var(--gold);z-index:-1}
+.rabbi-txt .lead{color:#B9C2D6;margin:24px 0}
+.quote{margin:36px 0 40px;padding-inline-start:24px;border-inline-start:2px solid var(--gold);font-size:clamp(20px,1.8vw,26px);line-height:1.45;font-weight:300;color:#fff}
+.quote cite{display:block;font-style:normal;font-size:14px;color:var(--gold-soft);margin-top:12px;font-weight:400}
+
+/* ---------- 04 programs ---------- */
+.prog-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:56px}
+.prog-head .lead{max-width:460px;margin:0;color:var(--ink-soft)}
+.prog{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+.acc{border-top:1px solid rgba(22,33,58,.16)}
+.acc-item{border-bottom:1px solid rgba(22,33,58,.16)}
+.acc-btn{width:100%;display:grid;grid-template-columns:64px 1fr 40px;align-items:center;gap:12px;background:none;border:0;padding:26px 0;text-align:start;color:var(--ink)}
+.acc-num{font-size:clamp(26px,2.6vw,38px);font-weight:700;color:var(--gold-deep);line-height:1}
+.acc-title{font-size:clamp(20px,1.9vw,26px);font-weight:700}
+.acc-ico{width:36px;height:36px;border:1px solid rgba(22,33,58,.25);border-radius:50%;position:relative;transition:background .3s,border-color .3s}
+.acc-ico::before,.acc-ico::after{content:"";position:absolute;top:50%;left:50%;width:12px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .3s}
+.acc-ico::after{transform:translate(-50%,-50%) rotate(90deg)}
+.acc-item.open .acc-ico{background:var(--navy-900);border-color:var(--navy-900)}
+.acc-item.open .acc-ico::before,.acc-item.open .acc-ico::after{background:#fff}
+.acc-item.open .acc-ico::after{transform:translate(-50%,-50%) rotate(0)}
+.acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.acc-item.open .acc-panel{grid-template-rows:1fr}
+.acc-panel>div{overflow:hidden}
+.acc-panel p{margin:0;padding:0 76px 28px 52px;color:var(--ink-soft);font-weight:300}
+.prog-visual{position:sticky;top:110px;aspect-ratio:4/5;overflow:hidden;background:var(--navy-900)}
+.prog-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.2s var(--ease)}
+.prog-visual img.show{opacity:1;transform:none}
+.prog-visual .cap{position:absolute;inset-inline:0;bottom:0;padding:22px;background:linear-gradient(transparent,rgba(8,16,31,.8));color:#fff;font-size:14px}
+.prog-cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- 05 matzpen ---------- */
+.mz{background:linear-gradient(180deg,var(--cream) 0%,#F1E7D2 100%);overflow:hidden}
+.mz-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(32px,5vw,80px);align-items:center;margin-bottom:72px}
+.mz-top img{width:clamp(150px,18vw,240px);mix-blend-mode:multiply}
+.mz-top .lead{color:var(--ink-soft);max-width:620px;margin:20px 0 0}
+.mz-rose{position:absolute;width:720px;height:720px;top:-180px;left:-240px;opacity:.07;pointer-events:none}
+.tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+.track{background:#fff;border:1px solid rgba(156,122,60,.22);padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;position:relative;transition:transform .5s var(--ease),box-shadow .5s}
+.track:hover{transform:translateY(-6px);box-shadow:0 24px 48px -24px rgba(22,33,58,.25)}
+.track-n{font-size:14px;color:var(--gold-deep);letter-spacing:.14em;margin-bottom:28px;display:flex;justify-content:space-between;align-items:center}
+.badge{font-size:12px;letter-spacing:.04em;background:var(--navy-900);color:var(--gold-soft);padding:5px 10px}
+.track h3{margin-bottom:14px}
+.track p{color:var(--ink-soft);font-weight:300;margin:0 0 28px;flex:1}
+.track ul{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:10px;font-size:15px}
+.track li{display:flex;gap:10px;align-items:flex-start}
+.track li::before{content:"";width:6px;height:6px;margin-top:9px;flex-shrink:0;background:var(--gold);transform:rotate(45deg)}
+.track .btn{align-self:flex-start}
+.track.feat{background:var(--navy-900);color:#fff;border-color:var(--navy-900)}
+.track.feat p,.track.feat ul{color:#C5CDDD}
+.track.feat .track-n{color:var(--gold-soft)}
+
+/* ---------- statement + values ---------- */
+.statement{background:var(--navy-950);color:#fff;overflow:hidden}
+.st-line{font-weight:700;font-size:clamp(44px,9vw,150px);line-height:.95;margin:0 0 clamp(64px,8vw,120px);letter-spacing:-.02em}
+.st-line span{display:block}
+.st-line .o{color:transparent;-webkit-text-stroke:1px var(--gold)}
+.values{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-dark)}
+.value{padding:36px 0 36px;padding-inline-end:32px;border-bottom:1px solid var(--line-dark)}
+.value:not(:nth-child(3n+1)){border-inline-start:1px solid var(--line-dark);padding-inline-start:32px}
+.value svg{width:30px;height:30px;color:var(--gold);margin-bottom:20px}
+.value h3{font-size:22px;margin:0 0 10px;font-weight:700}
+.value p{margin:0;color:#A9B3C9;font-weight:300;font-size:16px}
+
+/* ---------- 06 videos ---------- */
+.vids{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(16px,2vw,24px);margin-top:56px}
+.vids .side{display:grid;gap:clamp(16px,2vw,24px)}
+.yt{position:relative;aspect-ratio:16/9;background:var(--navy-900);overflow:hidden;border:0;padding:0;width:100%;display:block;color:#fff;text-align:start}
+.yt img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),opacity .4s;opacity:.85}
+.yt:hover img{transform:scale(1.04);opacity:1}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,31,.9),rgba(8,16,31,0) 60%)}
+.yt .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:rgba(201,164,92,.95);display:grid;place-items:center;z-index:1;transition:transform .3s var(--ease)}
+.yt:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.yt .play::before{content:"";border-block:11px solid transparent;border-inline-end:18px solid var(--navy-950);margin-inline-end:-4px}
+.yt .t{position:absolute;inset-inline:20px;bottom:18px;z-index:1;font-weight:700;font-size:clamp(16px,1.4vw,20px);line-height:1.3}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.yt.playing::after{display:none}
+.vid-more{display:flex;justify-content:space-between;align-items:center;margin-top:28px;flex-wrap:wrap;gap:16px}
+.socials{display:flex;gap:10px}
+.socials a{width:42px;height:42px;border:1px solid rgba(22,33,58,.2);display:grid;place-items:center;border-radius:50%;transition:background .3s,border-color .3s,color .3s;color:var(--ink)}
+.socials a:hover{background:var(--navy-900);color:var(--gold-soft);border-color:var(--navy-900)}
+.socials svg{width:18px;height:18px}
+
+/* ---------- 07 testimonials ---------- */
+.testi{background:var(--cream-2)}
+.t-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(32px,6vw,96px);align-items:center}
+.t-stage{position:relative;min-height:340px}
+.t-card{position:absolute;inset:0;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .6s,transform .6s var(--ease),visibility .6s}
+.t-card.on{opacity:1;visibility:visible;transform:none;position:relative}
+.t-card blockquote{margin:0;font-size:clamp(22px,2.3vw,34px);line-height:1.4;font-weight:300;color:var(--ink)}
+.t-card blockquote::before{content:"”";display:block;font-size:110px;line-height:.6;color:var(--gold);font-weight:700;margin-bottom:10px}
+.t-who{margin-top:28px;display:flex;flex-direction:column}
+.t-who b{font-size:18px}
+.t-who span{color:var(--ink-soft);font-size:15px}
+.demo-tag{display:inline-block;font-size:11px;background:rgba(156,122,60,.15);color:var(--gold-deep);padding:3px 8px;margin-top:8px;align-self:flex-start;letter-spacing:.04em}
+.t-nav{display:flex;align-items:center;gap:14px;margin-top:36px}
+.t-nav button{width:48px;height:48px;border-radius:50%;border:1px solid rgba(22,33,58,.25);background:none;display:grid;place-items:center;color:var(--ink);transition:background .3s,color .3s}
+.t-nav button:hover{background:var(--navy-900);color:#fff}
+.t-nav svg{width:18px}
+.t-count{font-size:14px;color:var(--ink-soft);letter-spacing:.1em;min-width:56px;text-align:center}
+
+/* ---------- 08 donate ---------- */
+.donate{color:#fff;overflow:hidden;isolation:isolate;background:var(--navy-950)}
+.donate>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.5}
+.donate::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to left,rgba(8,16,31,.96) 30%,rgba(8,16,31,.7))}
+.don-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(40px,6vw,96px);align-items:center}
+.don-grid .lead{color:#C5CDDD;margin:24px 0 36px}
+.don-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark)}
+.don-item{background:rgba(8,16,31,.72);padding:28px;backdrop-filter:blur(4px)}
+.don-item b{display:block;font-size:13px;color:var(--gold);letter-spacing:.14em;margin-bottom:14px}
+.don-item h3{font-size:20px;margin:0 0 8px}
+.don-item p{margin:0;color:#A9B3C9;font-size:15px;font-weight:300}
+
+/* ---------- 09 contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(40px,6vw,96px)}
+.c-info .lead{color:var(--ink-soft);margin:24px 0 40px}
+.c-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.c-list a,.c-list div{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(22,33,58,.12);text-decoration:none;transition:color .3s}
+.c-list a:hover{color:var(--gold-deep)}
+.c-list svg{width:20px;height:20px;color:var(--gold-deep);flex-shrink:0}
+.c-list small{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:.08em}
+.c-list span{font-size:18px}
+form.cf{background:#fff;padding:clamp(28px,4vw,52px);border:1px solid rgba(22,33,58,.08);box-shadow:0 30px 60px -40px rgba(22,33,58,.35)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.f{display:flex;flex-direction:column;margin-bottom:22px}
+.f label{font-size:14px;color:var(--ink-soft);margin-bottom:8px}
+.f input,.f select,.f textarea{font:inherit;font-size:17px;border:0;border-bottom:1px solid rgba(22,33,58,.25);padding:10px 0;background:transparent;color:var(--ink);border-radius:0;transition:border-color .3s}
+.f select{appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2316213A' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat left 4px center}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-bottom-color:var(--gold-deep)}
+.f textarea{resize:vertical;min-height:90px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{margin:0;cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:9px 16px;border:1px solid rgba(22,33,58,.2);font-size:15px;color:var(--ink);transition:all .25s}
+.chips input:checked+span{background:var(--navy-900);color:#fff;border-color:var(--navy-900)}
+.chips input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-soft);margin:6px 0 28px}
+.consent input{margin-top:5px;accent-color:var(--navy-900)}
+.f-ok{display:none;padding:18px;background:rgba(201,164,92,.14);border-inline-start:3px solid var(--gold);margin-top:20px}
+.f-ok.show{display:block}
+
+/* ---------- footer ---------- */
+.foot{background:var(--navy-950);color:#A9B3C9;padding-block:80px 32px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:56px;border-bottom:1px solid var(--line-dark)}
+.foot h4{color:#fff;font-size:15px;margin:0 0 18px;letter-spacing:.06em}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.foot a{text-decoration:none;transition:color .3s}
+.foot a:hover{color:var(--gold-soft)}
+.foot .logo{margin-bottom:20px}
+.foot .socials a{border-color:var(--line-dark);color:#fff}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:28px;font-size:13px}
+.foot-bottom nav{display:flex;gap:20px;flex-wrap:wrap}
+
+/* ---------- floating ---------- */
+.wa-float{position:fixed;bottom:22px;left:22px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.4);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.a11y-float{position:fixed;top:50%;right:0;z-index:90;background:var(--navy-900);color:var(--gold-soft);border:1px solid var(--line-dark);border-inline-end:0;width:44px;height:48px;display:grid;place-items:center;transform:translateY(-50%);text-decoration:none}
+.a11y-float svg{width:24px;height:24px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav,.hdr-cta .lang,.hdr-cta .btn{display:none}
+  .burger{display:block}
+  .menu-open .nav{display:flex;position:fixed;inset:0;top:0;flex-direction:column;justify-content:center;align-items:center;gap:26px;background:var(--navy-950);z-index:-1}
+  .menu-open .nav a{font-size:26px;font-weight:700}
+  .menu-open .nav .m-extra{display:flex}
+  .menu-open .hdr{background:transparent;box-shadow:none;backdrop-filter:none}
+}
+.m-extra{display:none;gap:12px;margin-top:20px}
+.m-extra a{font-size:16px!important}
+@media (max-width:900px){
+  .worlds,.rabbi,.prog,.contact-grid,.don-grid,.t-wrap{grid-template-columns:1fr}
+  .world{min-height:520px}
+  .prog-visual{display:none}
+  .tracks{grid-template-columns:1fr}
+  .values{grid-template-columns:1fr 1fr}
+  .value:not(:nth-child(3n+1)){border-inline-start:0;padding-inline-start:0}
+  .value:nth-child(even){border-inline-start:1px solid var(--line-dark);padding-inline-start:24px}
+  .vids{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .mz-top{grid-template-columns:1fr}
+  .rabbi-img{max-width:520px}
+  .t-stage{min-height:0}
+}
+@media (max-width:640px){
+  .stats{grid-template-columns:1fr}
+  .stat+.stat{border-inline-start:0;padding-inline-start:0;border-top:1px solid rgba(22,33,58,.15)}
+  .stat{padding-bottom:24px}
+  .about-img{aspect-ratio:4/3}
+  .values{grid-template-columns:1fr}
+  .value:nth-child(even){border-inline-start:0;padding-inline-start:0}
+  .acc-btn{grid-template-columns:48px 1fr 36px}
+  .acc-panel p{padding:0 0 24px 0;padding-inline-start:60px}
+  .f-row{grid-template-columns:1fr;gap:0}
+  .don-list{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .world-b .mz-logo{width:42%}
+  .rabbi-img::after{inset:14px -10px -14px 10px}
+  .wa-float{width:52px;height:52px;bottom:16px;left:16px}
+  .a11y-float{top:auto;bottom:18px;right:16px;transform:none;border:1px solid var(--line-dark);border-radius:50%;width:48px;height:48px}
+}
+/* ---------- hero v2: two paths ---------- */
+.hero2{background:var(--navy-950);color:#fff;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;padding-top:92px}
+.h2-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,96px);align-items:end;padding:clamp(16px,3vh,40px) var(--side) clamp(26px,4vh,46px)}
+.h2-top .eyebrow{margin-bottom:16px}
+.h2-top h1{font-weight:700;font-size:clamp(42px,5.8vw,96px);line-height:.95;letter-spacing:-.01em;margin:0}
+.h2-top h1 .g{color:var(--gold)}
+.h2-top>p{margin:0;max-width:440px;color:#C9D0DF;font-weight:300;font-size:clamp(17px,1.3vw,20px);line-height:1.55}
+.paths{position:relative;flex:1;display:flex;min-height:clamp(380px,56vh,640px);border-top:1px solid rgba(201,164,92,.75)}
+.path{position:relative;flex:1 1 0;overflow:hidden;display:flex;align-items:flex-end;padding:clamp(28px,3.6vw,60px) clamp(24px,4vw,72px);transition:flex-grow .8s var(--ease)}
+.path-in{position:relative;z-index:2;max-width:470px;transition:opacity .6s}
+.path .who{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-size:13px;letter-spacing:.12em}
+.path .who b{font-weight:400;padding-inline-end:12px;border-inline-end:1px solid currentColor}
+.path h2{font-size:clamp(36px,4.2vw,68px);line-height:1;margin:0 0 14px}
+.path h2 small{display:block;font-size:.42em;font-weight:400;letter-spacing:.02em;margin-top:10px}
+.path-in>p:not(.who){margin:0 0 26px;max-width:390px;font-size:clamp(16px,1.15vw,18px)}
+.path-link{color:inherit;text-decoration:none}
+.path-link::after{content:"";position:absolute;inset:0;z-index:3}
+.path-link:focus-visible{outline:none}
+.path:focus-within{outline:2px solid var(--gold);outline-offset:-8px}
+.path .btn svg{transition:transform .4s var(--ease)}
+.path:hover .btn svg{transform:translateX(-5px)}
+/* leadership side */
+.p-lead .pbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:0;transition:transform 1.4s var(--ease)}
+.p-lead::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(8,16,31,.96) 6%,rgba(8,16,31,.6) 48%,rgba(8,16,31,.3) 100%)}
+.p-lead:hover .pbg{transform:scale(1.04)}
+.p-lead .who{color:var(--gold-soft)}
+.p-lead .path-in>p:not(.who){color:#C9D0DF}
+.p-lead h2 small{color:var(--gold)}
+.p-lead .vid-toggle{inset-inline-end:auto;inset-inline-start:20px;bottom:auto;top:20px;z-index:4}
+/* matzpen side */
+.p-mz{background:linear-gradient(160deg,var(--cream) 0%,#EEE1C6 100%);color:var(--ink);isolation:isolate}
+.p-mz>.p-rose,.p-mz>.p-logo{pointer-events:none}
+.p-mz .p-rose{position:absolute;width:min(620px,95%);aspect-ratio:1;height:auto;top:44%;inset-inline-end:-14%;translate:0 -50%;opacity:.17;z-index:0;animation:p-spin 160s linear infinite}
+@keyframes p-spin{to{rotate:360deg}}
+.p-mz .p-logo{position:absolute;z-index:1;top:clamp(26px,3.4vw,52px);inset-inline-end:clamp(24px,4vw,72px);width:clamp(96px,9vw,140px);mix-blend-mode:multiply}
+.p-mz .who{color:var(--gold-deep)}
+.p-mz .path-in>p:not(.who){color:var(--ink-soft)}
+.p-mz h2 small{color:var(--gold-deep)}
+.divide{flex:0 0 1px;background:rgba(201,164,92,.75);position:relative;z-index:5}
+.divide::before{content:"";position:absolute;top:0;left:50%;width:16px;height:16px;transform:translate(-50%,-50%) rotate(45deg);background:var(--gold);box-shadow:0 0 0 6px var(--navy-950)}
+.btn-navy{background:var(--navy-900);color:#fff}
+@media (hover:hover) and (min-width:901px){
+  .paths:hover .path,.paths:focus-within .path{flex-grow:.74}
+  .paths .path:hover,.paths .path:focus-within{flex-grow:1.26}
+  .paths:hover .path:not(:hover) .path-in{opacity:.6}
+}
+@media (max-width:900px){
+  .hero2{padding-top:76px;min-height:0}
+  .h2-top{grid-template-columns:1fr;gap:14px;padding:18px var(--gutter) 28px}
+  .h2-top h1{font-size:clamp(38px,10.5vw,56px)}
+  .paths{flex-direction:column;min-height:0}
+  .h2-top h1 .g{display:block}
+  .h2-top>p{font-size:16px}
+  .path{flex:none;min-height:0;padding:26px var(--gutter)}
+  .p-lead{padding-top:clamp(110px,30vw,150px)}
+  .path h2{font-size:clamp(32px,9vw,44px)}
+  .path-in>p:not(.who){font-size:15px;margin-bottom:20px}
+  .divide::before{top:50%;box-shadow:0 0 0 5px var(--cream)}
+  .p-mz .p-rose{width:120%;inset-inline-end:-45%;top:40%}
+  .p-mz .p-logo{width:92px;top:24px;inset-inline-end:var(--gutter)}
+  .p-lead .vid-toggle{top:14px;inset-inline-start:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  .hero{height:auto}.hero-stage{position:relative;height:auto;min-height:100vh}
+  .wordfx span{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg-ofek" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3C9BE0"/><stop offset="1" stop-color="#36C6EE"/></linearGradient>
+    <symbol id="ofek-mark" viewBox="750 565 432 482">
+      <path d="M965 575 1100 800 965 1037 830 800Z" fill="#BFE9F7" opacity=".55"/>
+      <path d="M760 678h135q55 12 90 107q25-95 75-107h112l-72 122 72 130h-112q-80-10-110-110q-25 100-80 110H760l70-130Z" fill="url(#lg-ofek)"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Zm0-9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5Z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8ZM10 15V9l5.2 3Z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.5 3a4.8 4.8 0 0 0 4 4.4v3.2a8 8 0 0 1-4-1.2v6.3A6.3 6.3 0 1 1 10.2 9.4v3.3a3 3 0 1 0 3 3V3Z"/></symbol>
+    <symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M4 8l8 1.5L20 8M12 9.5V14m0 0-3.5 7M12 14l3.5 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="אופק יהודי – לדף הבית">
+      <svg aria-hidden="true"><use href="#ofek-mark"/></svg>
+      <span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="ניווט ראשי">
+      <a href="leadership.html">יהדות ומנהיגות</a>
+      <a href="matzpen.html">המצפן</a>
+      <a href="rabbi.html">הרב יוסף מלכה</a>
+      <a href="content.html">תוכן ושיעורים</a>
+      <a href="#contact">צור קשר</a>
+      <span class="m-extra"><a class="lang" href="en/" lang="en">English</a><a class="btn btn-gold" href="#donate">תרמו</a></span>
+    </nav>
+    <div class="hdr-cta">
+      <a class="lang" href="en/" lang="en" hreflang="en">EN</a>
+      <a class="btn btn-gold" href="#donate">תרמו</a>
+      <button class="burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero2" id="top" aria-labelledby="h2-title">
+  <div class="h2-top">
+    <div>
+      <p class="eyebrow reveal">ארגון אופק יהודי · ירושלים</p>
+      <h1 class="reveal d1" id="h2-title">מהבסיס <span class="g">ועד החופה.</span></h1>
+    </div>
+    <p class="reveal d2">הרב יוסף מלכה מלווה צעירים בשני רגעים שמעצבים חיים: כשהם לומדים להוביל, וכשהם בונים בית.</p>
+  </div>
+  <div class="paths">
+    <article class="path p-lead">
+      <img class="pbg" src="assets/video/hero-poster.jpg" alt="">
+      <video class="pbg hv" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg" aria-hidden="true"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+      <div class="path-in">
+        <p class="who"><b>01</b>לבסיסים, ישיבות, מכינות וארגונים</p>
+        <h2><a class="path-link" href="leadership.html">יהדות ומנהיגות</a></h2>
+        <p>הרצאות, ימי חיזוק וסדנאות ממקורות היהדות, שמחזקים זהות, אחריות ומנהיגות.</p>
+        <span class="btn btn-gold" aria-hidden="true">להזמנת הרצאה <svg><use href="#i-arrow"/></svg></span>
+      </div>
+      <button class="vid-toggle" id="vidToggle" aria-pressed="false"><i aria-hidden="true"></i><span>עצירת וידאו</span></button>
+    </article>
+    <span class="divide" aria-hidden="true"></span>
+    <article class="path p-mz">
+      <svg class="p-rose" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#9C7A3C" stroke-width=".3"><circle cx="50" cy="50" r="48"/><circle cx="50" cy="50" r="38"/><path d="M50 2v96M2 50h96M16 16l68 68M84 16 16 84"/></g><path d="M50 6 56 44 94 50 56 56 50 94 44 56 6 50 44 44Z" fill="#9C7A3C"/></svg>
+      <img class="p-logo" src="assets/img/matzpen-logo.png" alt="">
+      <div class="path-in">
+        <p class="who"><b>02</b>לרווקים ורווקות</p>
+        <h2><a class="path-link" href="matzpen.html">המצפן <small>הדרך לזוגיות</small></a></h2>
+        <p>שיטה מסודרת, צעד אחר צעד, למציאת זוגיות נכונה ובניית בית יציב.</p>
+        <span class="btn btn-navy" aria-hidden="true">להכיר את המצפן <svg><use href="#i-arrow"/></svg></span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 01 RABBI -->
+<section class="sec dark" id="rabbi" aria-labelledby="rabbi-h" style="background:var(--navy-800)">
+  <div class="wrap rabbi">
+    <figure class="rabbi-img reveal" style="margin:0">
+      <img src="assets/img/rabbi-portrait.jpg" alt="הרב יוסף מלכה" loading="lazy">
+    </figure>
+    <div class="rabbi-txt">
+      <p class="eyebrow"><b>01</b>מי עומד מאחורי הדרך</p>
+      <h2 id="rabbi-h" class="h-l reveal">הרב יוסף מלכה</h2>
+      <p class="lead reveal d1">מחנך, מרצה ומנחה זוגיות, שמלווה כבר למעלה מעשרים שנה צעירים, חיילים וזוגות צעירים. בהרצאות בבסיסים, בבית המדרש ובקבוצות הבוטיק, הוא מחבר בין מקורות היהדות לבין כלים מעשיים לחיים.</p>
+      <blockquote class="quote reveal d2">״מנהיג אמיתי לוקח אחריות, מקשיב לאחר והראשון לסייע לכל.״<cite>מתוך ערכי אופק יהודי</cite></blockquote>
+      <a class="btn btn-line reveal d3" href="rabbi.html">לסיפור המלא <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 02 ABOUT -->
+<section class="sec" id="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow"><b>02</b>אודות הארגון</p>
+      <h2 id="about-h" class="sr">אודות אופק יהודי</h2>
+      <p class="wordfx" id="wordfx" data-gold="הזהות,היהודית,כלים,פרקטיים,לחיים.">בחברה הישראלית יש היום חיפוש ער אחר הזהות היהודית. אופק יהודי פועל להעמיק אותה בקרב צעירים, חיילים, סטודנטים וזוגות צעירים – בשיעורים, בהרצאות מרתקות ובסדנאות עם כלים פרקטיים לחיים.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b data-count="20">0<em>+</em></b><span>שנים של חיזוק בבסיסים צבאיים</span></div>
+      <div class="stat reveal d1"><b data-count="120">0</b><span>חיילים בודדים בליווי צמוד</span></div>
+      <div class="stat reveal d2"><b data-count="50">0</b><span>ימי חיזוק ואירועים בחודש</span></div>
+    </div>
+    <figure class="about-img reveal" style="margin:0">
+      <img src="assets/img/soldiers-talk.jpg" alt="הרב יוסף מלכה משוחח עם חיילים בשטח" loading="lazy" data-parallax>
+      <figcaption>שיחת חיזוק עם לוחמים · 2024</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 03 PROGRAMS -->
+<section class="sec" id="programs" aria-labelledby="prog-h">
+  <div class="wrap">
+    <div class="prog-head">
+      <div>
+        <p class="eyebrow"><b>03</b>יהדות, הרצאות ומנהיגות</p>
+        <h2 id="prog-h" class="h-l reveal">תוכניות שמשאירות <span style="color:var(--gold-deep)">חותם.</span></h2>
+      </div>
+      <p class="lead reveal d1">שיעורים, הרצאות וסדנאות ממקורות היהדות, בשילוב כלים מקצועיים – בהתאמה לכל קהל ולכל מוסד.</p>
+    </div>
+    <div class="prog">
+      <div>
+        <div class="acc" id="acc">
+          <div class="acc-item open" data-img="0">
+            <button class="acc-btn" aria-expanded="true" id="a1" aria-controls="p1"><span class="acc-num">01</span><span class="acc-title">הרצאות וסדנאות</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p1" role="region" aria-labelledby="a1"><div><p>הרצאות מרתקות בנושאי זהות יהודית, ערכים ומנהיגות, וסדנאות מגוונות עם כלים פרקטיים לחיים – למוסדות, לארגונים ולקהילות.</p></div></div>
+          </div>
+          <div class="acc-item" data-img="1">
+            <button class="acc-btn" aria-expanded="false" id="a2" aria-controls="p2"><span class="acc-num">02</span><span class="acc-title">חיזוק בבסיסים צבאיים</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p2" role="region" aria-labelledby="a2"><div><p>למעלה מעשרים שנה של שיעורי חיזוק בבסיסים, ובמיוחד בתקופות של מבצעים ומלחמה. שיתוף פעולה ייחודי עם לוחמי ״נצח יהודה״.</p></div></div>
+          </div>
+          <div class="acc-item" data-img="2">
+            <button class="acc-btn" aria-expanded="false" id="a3" aria-controls="p3"><span class="acc-num">03</span><span class="acc-title">ליווי חיילים בודדים</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p3" role="region" aria-labelledby="a3"><div><p>קרוב ל־120 חיילים בודדים בדירות מותאמות, במסגרת מקצועית ותומכת – כולל סופי שבוע משותפים וליווי רוחני ומקצועי.</p></div></div>
+          </div>
+          <div class="acc-item" data-img="3">
+            <button class="acc-btn" aria-expanded="false" id="a4" aria-controls="p4"><span class="acc-num">04</span><span class="acc-title">בית מדרש וחברותות</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p4" role="region" aria-labelledby="a4"><div><p>בית מדרש לצעירים ושיעורי ערב לבוגרי צבא, לימוד בחברותות בשיתוף בתי מדרש שונים, והכשרת אברכים בלימודי הלכה וידיעת הש״ס.</p></div></div>
+          </div>
+          <div class="acc-item" data-img="4">
+            <button class="acc-btn" aria-expanded="false" id="a5" aria-controls="p5"><span class="acc-num">05</span><span class="acc-title">מלגות ומנהיגות צעירה</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p5" role="region" aria-labelledby="a5"><div><p>תוכנית מלגות לבוגרי צבא ולסטודנטים, לצד תוכנית מנהיגות והעצמה אישית – כי אנחנו גאים לגדל מנהיגים צעירים.</p></div></div>
+          </div>
+          <div class="acc-item" data-img="5">
+            <button class="acc-btn" aria-expanded="false" id="a6" aria-controls="p6"><span class="acc-num">06</span><span class="acc-title">סדנאות לזוגות צעירים</span><span class="acc-ico" aria-hidden="true"></span></button>
+            <div class="acc-panel" id="p6" role="region" aria-labelledby="a6"><div><p>הדרכה מקיפה ומקצועית ב״קבוצות בוטיק״ ביסודות הבית היהודי, באתגרי הזוגיות ובחינוך הילדים.</p></div></div>
+          </div>
+        </div>
+        <div class="prog-cta">
+          <a class="btn btn-ink" href="#contact" data-topic="lecture">להזמנת הרצאה או סדנה <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ink-line" href="leadership.html">לעמוד יהדות ומנהיגות <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="prog-visual" aria-hidden="true">
+        <img class="show" src="assets/img/youth-lecture.jpg" alt="" loading="lazy">
+        <img src="assets/img/base-netting.jpg" alt="" loading="lazy">
+        <img src="assets/img/base-tent.jpg" alt="" loading="lazy">
+        <img src="assets/img/beit-midrash.jpg" alt="" loading="lazy">
+        <img src="assets/img/classroom.jpg" alt="" loading="lazy">
+        <img src="assets/img/lecture-hall.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 MATZPEN -->
+<section class="sec mz" id="matzpen" aria-labelledby="mz-h">
+  <svg class="mz-rose" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#9C7A3C" stroke-width=".3"><circle cx="50" cy="50" r="48"/><circle cx="50" cy="50" r="38"/><path d="M50 2v96M2 50h96M16 16l68 68M84 16 16 84"/></g><path d="M50 6 56 44 94 50 56 56 50 94 44 56 6 50 44 44Z" fill="#9C7A3C"/></svg>
+  <div class="wrap">
+    <div class="mz-top">
+      <img src="assets/img/matzpen-logo.png" alt="לוגו קורס המצפן" loading="lazy">
+      <div>
+        <p class="eyebrow" style="color:var(--gold-deep)"><b>04</b>קורס המצפן</p>
+        <h2 id="mz-h" class="h-l reveal">הדרך למציאת זוגיות <span style="color:var(--gold-deep)">יציבה ומדויקת.</span></h2>
+        <p class="lead reveal d1">מודל ״המצפן״ של הרב יוסף מלכה הוא תוכנית הכנה לזוגיות לרווקים ולרווקות – לפגישות, לדייטים ולבחירה הנכונה לקראת חתונה. בוחרים את המסלול שמתאים לכם:</p>
+        <a class="btn btn-ink-line reveal d2" href="matzpen.html" style="margin-top:8px">להכיר את שיטת המצפן <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="tracks">
+      <article class="track reveal">
+        <div class="track-n"><span>מסלול 01</span><span class="badge">המחזור הבא – בקרוב</span></div>
+        <h3 class="h-m">קורס פרונטלי</h3>
+        <p>מפגשים קבוצתיים בהנחיית הרב, בקבוצה קטנה ואינטימית, עם ליווי אישי לאורך הדרך.</p>
+        <ul><li>מפגשים קבוצתיים בירושלים</li><li>תרגול, שאלות וליווי אישי</li><li>מועדים ומיקום יפורסמו בקרוב</li></ul>
+        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">השאירו פרטים <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="track feat reveal d1">
+        <div class="track-n"><span>מסלול 02</span><span class="badge" style="background:var(--gold);color:var(--navy-950)">זמין עכשיו</span></div>
+        <h3 class="h-m">קורס דיגיטלי</h3>
+        <p>כל שיטת המצפן בשיעורים מצולמים – לומדים בקצב שלכם, מכל מקום ובכל זמן.</p>
+        <ul><li>פרקי וידאו מסודרים לפי שלבים</li><li>גישה מיידית אחרי הרכישה</li><li>אפשר לחזור לתכנים בכל זמן</li></ul>
+        <a class="btn btn-gold" href="#" data-schoolers>לפרטים ולרכישה <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="track reveal d2">
+        <div class="track-n"><span>מסלול 03</span></div>
+        <h3 class="h-m">סדנאות</h3>
+        <p>סדנאות ממוקדות לרווקים ולרווקות, ולקבוצות ומוסדות שרוצים להביא את המצפן אליהם.</p>
+        <ul><li>סדנאות פתוחות וסגורות</li><li>מותאם לקהילות ולמוסדות</li><li>אפשר להזמין לכל מקום בארץ</li></ul>
+        <a class="btn btn-ink-line" href="#contact" data-topic="matzpen">לפרטים ולהרשמה <svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT + VALUES -->
+<section class="sec statement" aria-labelledby="val-h">
+  <div class="wrap">
+    <p class="st-line reveal" aria-hidden="true"><span>מקשיבים יותר.</span><span class="o">אומרים פחות.</span></p>
+    <p class="eyebrow"><b>✦</b>הערכים שלנו</p>
+    <h2 id="val-h" class="sr">הערכים שלנו</h2>
+    <div class="values">
+      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3 14.5 9.5 21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></svg><h3>אמונה ובטחון</h3><p>חיבור למסורת היהודית, וחיזוק הידיעה והאמונה בבורא.</p></div>
+      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg><h3>מנהיגות</h3><p>מנהיג אמיתי לוקח אחריות, מקשיב לאחר והראשון לסייע לכל.</p></div>
+      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h3>אחריות</h3><p>רק כשנושאים בתוצאות המעשים אפשר להתבונן, להחכים ולחשב מסלול מחדש.</p></div>
+      <div class="value reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 10a5 5 0 0 1 10 0c0 3-3 4-3 7a2.5 2.5 0 0 1-5 0"/><path d="M10 10a2 2 0 0 1 4 0"/></svg><h3>הקשבה</h3><p>מקשיבים יותר ואומרים פחות – זה הסוד לקשרים חזקים ולהשפעה אמיתית.</p></div>
+      <div class="value reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg><h3>אכפתיות</h3><p>להכיר היטב את צורכי הזולת, להזדהות איתו ולפעול למענו.</p></div>
+      <div class="value reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20 10 14l4 4 6-8"/><path d="M15 10h5v5"/></svg><h3>התפתחות</h3><p>מי שמשקיע בעבודה פנימית ובהתפתחות אישית, משפיע גם על סביבתו.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 VIDEOS -->
+<section class="sec" id="videos" aria-labelledby="vid-h">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--gold-deep)"><b>05</b>תוכן ושיעורים</p>
+    <h2 id="vid-h" class="h-l reveal">שיעורים <span style="color:var(--gold-deep)">נבחרים.</span></h2>
+    <div class="vids">
+      <button class="yt reveal" data-id="W2gohrMshJA" aria-label="ניגון הסרטון: על אכפתיות ומנהיגות">
+        <img src="https://i.ytimg.com/vi/W2gohrMshJA/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">על ״אכפתיות״ ומנהיגות</span>
+      </button>
+      <div class="side">
+        <button class="yt reveal d1" data-id="jmHVbkUHxKc" aria-label="ניגון הסרטון: האחדות כמשימה">
+          <img src="https://i.ytimg.com/vi/jmHVbkUHxKc/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">״האחדות כמשימה״ – פרשת בא</span>
+        </button>
+        <button class="yt reveal d2" data-id="KKMKiQ-QN7Y" aria-label="ניגון הסרטון: להילחם ולנצח">
+          <img src="https://i.ytimg.com/vi/KKMKiQ-QN7Y/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="t">״להילחם ולנצח״ – פרשת בשלח</span>
+        </button>
+      </div>
+    </div>
+    <div class="vid-more">
+      <a class="btn btn-ink-line" href="content.html">לכל השיעורים והמאמרים <svg><use href="#i-arrow"/></svg></a>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="פייסבוק"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="יוטיוב"><svg><use href="#i-yt"/></svg></a>
+        <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="טיקטוק"><svg><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 TESTIMONIALS -->
+<section class="sec testi" aria-labelledby="t-h">
+  <div class="wrap t-wrap">
+    <div>
+      <p class="eyebrow" style="color:var(--gold-deep)"><b>06</b>המלצות</p>
+      <h2 id="t-h" class="h-l reveal">מה אומרים <span style="color:var(--gold-deep)">עלינו.</span></h2>
+      <div class="t-nav">
+        <button id="tNext" aria-label="להמלצה הקודמת"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+        <span class="t-count" id="tCount" aria-live="polite">01 / 03</span>
+        <button id="tPrev" aria-label="להמלצה הבאה"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      </div>
+    </div>
+    <div class="t-stage" id="tStage">
+      <figure class="t-card on" style="margin:0">
+        <blockquote>הפעלנו שתי תוכניות משמעותיות של הדרכת צעירים לקראת חיי נישואין משלב הדייטים. הרב יוסף מלכה הוביל את התוכניות ביד רמה, הצליח להכין אותם לנישואין וליווה אותם גם לאחר החתונה.</blockquote>
+        <figcaption class="t-who"><b>יוסי לוי</b><span>מנכ״ל עמותת ״נצח יהודה״</span></figcaption>
+      </figure>
+      <figure class="t-card" style="margin:0">
+        <blockquote>הרב הביא לנו תכל׳ס – כלים ותרגילים, כמו איך לברר ומה בדיוק להגיד בשידוכים. זה נתן לי המון ביטחון וסדר בראש. זה באמת מעבר לסתם שיעור – זה ארגז כלים לחיים.</blockquote>
+        <figcaption class="t-who"><b>רבקה</b><span>משתתפת בסדרת השיעורים על הבית היהודי</span></figcaption>
+      </figure>
+      <figure class="t-card" style="margin:0">
+        <blockquote>יצאתי עם ארגז כלים מלא ומשמעותי. הרב עוזר להבין לעומק מהי המהות האמיתית של חתונה ושידוכים, ואיך ניגשים לתהליך בצורה נכונה.</blockquote>
+        <figcaption class="t-who"><b>שרה</b><span>משתתפת בסדרת השיעורים על הבית היהודי</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 07 DONATE -->
+<section class="sec donate" id="donate" aria-labelledby="don-h">
+  <img src="assets/img/base-tent.jpg" alt="" loading="lazy">
+  <div class="wrap don-grid">
+    <div>
+      <p class="eyebrow"><b>07</b>שותפים לדרך</p>
+      <h2 id="don-h" class="h-l reveal">שותפים לחיזוק <span class="gold">הדור הצעיר.</span></h2>
+      <p class="lead reveal d1">כל תרומה מגיעה ישירות לשטח – לחיילים בבסיסים, לחיילים הבודדים, לבית המדרש ולצעירים שבונים בית יהודי.</p>
+      <a class="btn btn-gold reveal d2" href="#" data-donate>לתרומה מאובטחת <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="don-list">
+      <div class="don-item reveal"><b>01</b><h3>יום חיזוק בבסיס</h3><p>יום חיזוק ל־50–120 לוחמים, בשיתוף ״נצח יהודה״.</p></div>
+      <div class="don-item reveal d1"><b>02</b><h3>חיבוק לחייל בודד</h3><p>דירות, סופי שבוע משותפים וליווי לכ־120 חיילים בודדים.</p></div>
+      <div class="don-item reveal d2"><b>03</b><h3>מלגות לבית המדרש</h3><p>תוכנית מלגות לבוגרי צבא הלומדים בבית המדרש.</p></div>
+      <div class="don-item reveal d3"><b>04</b><h3>זוגיות מנצחת</h3><p>סדנאות לרווקים ולזוגות – לבנות בית יציב ושמח.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CONTACT -->
+<section class="sec" id="contact" aria-labelledby="c-h">
+  <div class="wrap contact-grid">
+    <div class="c-info">
+      <p class="eyebrow" style="color:var(--gold-deep)"><b>08</b>צור קשר</p>
+      <h2 id="c-h" class="h-l reveal">נשמח <span style="color:var(--gold-deep)">לשמוע מכם.</span></h2>
+      <p class="lead reveal d1">להזמנת הרצאה, להרשמה למצפן או לכל שאלה – השאירו פרטים ונחזור אליכם בהקדם.</p>
+      <ul class="c-list">
+        <li><a href="https://wa.me/972527773050" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><div style="border:0;padding:0;display:block"><small>וואטסאפ</small><span dir="ltr">052-777-3050</span></div></a></li>
+        <li><a href="tel:+97226518116"><svg><use href="#i-phone"/></svg><div style="border:0;padding:0;display:block"><small>משרד</small><span dir="ltr">02-651-8116</span></div></a></li>
+        <li><a href="mailto:yosef.malka2000@gmail.com"><svg><use href="#i-mail"/></svg><div style="border:0;padding:0;display:block"><small>מייל</small><span>yosef.malka2000@gmail.com</span></div></a></li>
+        <li><div><svg><use href="#i-pin"/></svg><div style="border:0;padding:0;display:block"><small>כתובת</small><span>ברנד 5, הר נוף, ירושלים</span></div></div></li>
+      </ul>
+    </div>
+    <form class="cf reveal d1" id="cf" novalidate>
+      <div class="f">
+        <span style="font-size:14px;color:var(--ink-soft);margin-bottom:10px" id="topic-l">במה נוכל לעזור?</span>
+        <div class="chips" role="radiogroup" aria-labelledby="topic-l">
+          <label><input type="radio" name="topic" value="lecture" checked><span>הזמנת הרצאה / סדנה</span></label>
+          <label><input type="radio" name="topic" value="matzpen"><span>קורס המצפן</span></label>
+          <label><input type="radio" name="topic" value="donate"><span>תרומה</span></label>
+          <label><input type="radio" name="topic" value="general"><span>פנייה כללית</span></label>
+        </div>
+      </div>
+      <div class="f-row">
+        <div class="f"><label for="f-name">שם מלא *</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="f"><label for="f-phone">טלפון *</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" dir="ltr" style="text-align:right"></div>
+      </div>
+      <div class="f-row">
+        <div class="f"><label for="f-mail">מייל</label><input id="f-mail" name="email" type="email" autocomplete="email" dir="ltr" style="text-align:right"></div>
+        <div class="f" id="f-extra"><label for="f-org">שם המוסד / הארגון</label><input id="f-org" name="org"></div>
+      </div>
+      <div class="f" id="f-track" hidden>
+        <label for="f-trk">איזה מסלול מעניין אתכם?</label>
+        <select id="f-trk" name="track"><option>קורס פרונטלי</option><option>קורס דיגיטלי</option><option>סדנאות</option><option>עוד לא בטוח/ה</option></select>
+      </div>
+      <div class="f"><label for="f-msg">הודעה</label><textarea id="f-msg" name="message" rows="3"></textarea></div>
+      <label class="consent"><input type="checkbox" name="consent" required> <span>קראתי את <a href="privacy.html" target="_blank">מדיניות הפרטיות</a> ואני מאשר/ת שאופק יהודי יחזרו אליי בנוגע לפנייה.</span></label>
+      <button class="btn btn-ink" type="submit">שליחה <svg><use href="#i-arrow"/></svg></button>
+      <p class="f-ok" id="fOk" role="status">תודה! הפרטים התקבלו ונחזור אליכם בהקדם.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top"><svg aria-hidden="true"><use href="#ofek-mark"/></svg><span class="logo-txt"><b>אופק יהודי</b><small>מנהיגים צעירים להצלחה</small></span></a>
+        <p style="max-width:320px;margin:0 0 22px">העמקת הזהות היהודית, מנהיגות והכוונה לזוגיות – לצעירים, לחיילים, לסטודנטים ולזוגות צעירים.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=100094389438595" target="_blank" rel="noopener" aria-label="פייסבוק"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.instagram.com/rabbiyosefmalka" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.youtube.com/@rabbiyosefmalka." target="_blank" rel="noopener" aria-label="יוטיוב"><svg><use href="#i-yt"/></svg></a>
+          <a href="https://www.tiktok.com/@rabbiyosefmalka" target="_blank" rel="noopener" aria-label="טיקטוק"><svg><use href="#i-tt"/></svg></a>
+        </div>
+      </div>
+      <div><h4><a href="leadership.html">יהדות ומנהיגות</a></h4><ul><li><a href="leadership.html#lectures">הרצאות וסדנאות</a></li><li><a href="leadership.html#programs">חיזוק בבסיסים</a></li><li><a href="leadership.html#programs">בית מדרש וחברותות</a></li><li><a href="#contact">הזמנת הרצאה</a></li></ul></div>
+      <div><h4><a href="matzpen.html">המצפן</a></h4><ul><li><a href="matzpen.html#tracks">קורס פרונטלי</a></li><li><a href="matzpen.html#tracks">קורס דיגיטלי</a></li><li><a href="matzpen.html#tracks">סדנאות</a></li></ul></div>
+      <div><h4>הארגון</h4><ul><li><a href="rabbi.html">הרב יוסף מלכה</a></li><li><a href="content.html">תוכן ושיעורים</a></li><li><a href="#donate">תרומות</a></li><li><a href="#contact">צור קשר</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 כל הזכויות שמורות לעמותת ״אופק שמחה״ (ע״ר 580452712)</span>
+      <nav aria-label="קישורים משפטיים"><a href="accessibility.html">הצהרת נגישות</a><a href="privacy.html">מדיניות פרטיות</a><a href="#">תקנון רכישה</a><a href="#">מדיניות תרומות</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/972527773050" target="_blank" rel="noopener" aria-label="שליחת הודעת וואטסאפ"><svg><use href="#i-wa"/></svg></a>
+<a class="a11y-float" href="accessibility.html" aria-label="הצהרת נגישות"><svg><use href="#i-a11y"/></svg></a>
+
+<script>
+(()=>{
+  const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // header
+  const hdr=$('#hdr'); const onScroll=()=>hdr.classList.toggle('solid',scrollY>40);
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // mobile menu
+  const burger=$('#burger');
+  burger.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');document.body.style.overflow=o?'hidden':''});
+  $$('#nav a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);document.body.style.overflow=''}));
+
+  // hero video (leadership side)
+  const vids=$$('.hv'), vt=$('#vidToggle'), v=vids[0];
+  const setPaused=p=>{vt.classList.toggle('paused',p);vt.setAttribute('aria-pressed',p);$('span',vt).textContent=p?'הפעלת וידאו':'עצירת וידאו'};
+  if(reduce){v.removeAttribute('autoplay');v.pause();setPaused(true)}
+  vt.addEventListener('click',()=>{if(v.paused){v.play();setPaused(false)}else{v.pause();setPaused(true)}});
+
+  // reveal
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.reveal').forEach(el=>el.closest('.hero2')?requestAnimationFrame(()=>el.classList.add('in')):io.observe(el));
+
+  // word-by-word reveal
+  const wf=$('#wordfx');
+  if(wf){
+    const gold=wf.dataset.gold.split(',');
+    wf.innerHTML=wf.textContent.trim().split(/\s+/).map(w=>`<span class="${gold.some(g=>w.replace(/[.,–]/g,'')===g.replace(/[.,]/g,''))?'g':''}">${w}</span>`).join(' ');
+    const spans=$$('span',wf);
+    const upd=()=>{const r=wf.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35)));const n=Math.round(p*spans.length);spans.forEach((s,i)=>s.classList.toggle('on',i<n))};
+    if(reduce)spans.forEach(s=>s.classList.add('on'));else{addEventListener('scroll',upd,{passive:true});upd()}
+  }
+
+  // counters
+  const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const b=e.target,to=+b.dataset.count,em=b.querySelector('em');const t0=performance.now(),d=reduce?0:1400;
+    const step=t=>{const k=d?Math.min(1,(t-t0)/d):1;const val=Math.round(to*(1-Math.pow(1-k,3)));b.firstChild.nodeValue=val;if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
+  $$('[data-count]').forEach(b=>co.observe(b));
+
+  // parallax
+  const px=$$('[data-parallax]');
+  if(!reduce&&px.length){const pu=()=>px.forEach(img=>{const r=img.parentElement.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const p=(r.top+r.height/2-innerHeight/2)/innerHeight;img.style.transform=`translateY(${(-8+p*-10).toFixed(2)}%)`});addEventListener('scroll',pu,{passive:true});pu()}
+
+  // accordion + visual
+  const items=$$('.acc-item'), imgs=$$('.prog-visual img');
+  const show=i=>imgs.forEach((im,k)=>im.classList.toggle('show',k===i));
+  items.forEach(it=>{
+    const b=$('.acc-btn',it);
+    b.addEventListener('click',()=>{const open=!it.classList.contains('open');items.forEach(o=>{o.classList.remove('open');$('.acc-btn',o).setAttribute('aria-expanded',false)});if(open){it.classList.add('open');b.setAttribute('aria-expanded',true);show(+it.dataset.img)}});
+    it.addEventListener('mouseenter',()=>show(+it.dataset.img));
+  });
+
+  // youtube lite
+  $$('.yt').forEach(b=>b.addEventListener('click',()=>{const w=document.createElement('div');w.className='yt playing';const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${b.dataset.id}?autoplay=1&rel=0`;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title=b.getAttribute('aria-label');w.appendChild(f);b.replaceWith(w);f.focus()}));
+
+  // testimonials
+  const cards=$$('.t-card'), cnt=$('#tCount'); let ti=0, timer;
+  const go=n=>{cards[ti].classList.remove('on');ti=(n+cards.length)%cards.length;cards[ti].classList.add('on');cnt.textContent=`${String(ti+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`};
+  $('#tPrev').addEventListener('click',()=>{go(ti+1);reset()}); $('#tNext').addEventListener('click',()=>{go(ti-1);reset()});
+  const reset=()=>{clearInterval(timer);if(!reduce)timer=setInterval(()=>go(ti+1),7000)}; reset();
+
+  // form topic logic
+  const form=$('#cf'), extra=$('#f-extra'), track=$('#f-track');
+  const syncTopic=()=>{const t=form.topic.value;extra.hidden=t!=='lecture';track.hidden=t!=='matzpen'};
+  $$('input[name=topic]').forEach(r=>r.addEventListener('change',syncTopic)); syncTopic();
+  $$('[data-topic]').forEach(a=>a.addEventListener('click',()=>{const r=$(`input[name=topic][value=${a.dataset.topic}]`);if(r){r.checked=true;syncTopic()}}));
+  $$('[data-donate]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('input[name=topic][value=donate]').checked=true;syncTopic();$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'})}));
+  $$('[data-schoolers]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('input[name=topic][value=matzpen]').checked=true;$('#f-trk').value='קורס דיגיטלי';syncTopic();$('#contact').scrollIntoView({behavior:reduce?'auto':'smooth'})}));
+  form.addEventListener('submit',e=>{e.preventDefault();
+    const bad=$$('[required]',form).filter(i=>i.type==='checkbox'?!i.checked:!i.value.trim());
+    $$('[required]',form).forEach(i=>i.setAttribute('aria-invalid',bad.includes(i)));
+    if(bad.length){bad[0].focus();return}
+    // TODO: לחבר ל-Google Apps Script (גיליון ניהול פניות + התראה במייל)
+    form.reset();syncTopic();$('#fOk').classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
